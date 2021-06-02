@@ -1,0 +1,36 @@
+slug: docker-vm-template
+id: jvuyehbycidz
+type: track
+title: Docker VM Template
+teaser: A short description of the track.
+description: |-
+  A long description of the track.
+
+  You can use any GitHub flavoured markdown.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: templates
+developers:
+- bruno@instruqt.com
+private: false
+published: false
+challenges:
+- slug: docker-challenge
+  id: gpsc9fa6cy3c
+  type: challenge
+  title: Docker challenge
+  teaser: A short description of the challenge.
+  notes:
+  - type: text
+    contents: Replace this text with your own text
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  tabs:
+  - title: Docker
+    type: terminal
+    hostname: docker
+  difficulty: basic
+  timelimit: 600
+checksum: "1938991020740321370"

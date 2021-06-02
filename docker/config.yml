@@ -1,0 +1,6 @@
+version: "2"
+virtualmachines:
+- name: docker
+  image: instruqt/docker-2010
+  shell: /bin/bash
+  machine_type: n1-standard-1
