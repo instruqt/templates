@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Checking if the folder: 'some-folder' exists."
+
+if [ -d /root/some-folder ]
+then
+    echo "The folder 'some-folder' exists!"
+else
+    fail-message "The folder 'some-folder' doesn't exist!"
+
+    exit 1
+fi
+
+exit 0

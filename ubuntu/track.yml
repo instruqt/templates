@@ -1,0 +1,53 @@
+slug: ubuntu-template
+id: i7hvacvj15xi
+type: track
+title: Ubuntu Template
+teaser: This is the most basic Instruqt track. Get started quickly with just one sandbox
+  container.
+description: |-
+  # Ubuntu Container
+
+  A basic Instruqt track. Get started quickly with just one sandbox container.
+
+  ## Get started with this template
+  Copy this template by running:
+
+  ```
+  instruqt track create \
+      <my-org>/my-new-track \
+      --from templates/ubuntu \
+      --title "My new track"
+  ```
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: templates
+developers:
+- victor@instruqt.com
+- bruno@instruqt.com
+private: false
+published: false
+challenges:
+- slug: explore-the-shell
+  id: gzmxcvgqwg6r
+  type: challenge
+  title: Creating a folder in Ubuntu
+  teaser: Learn how to create folder in Ubuntu!
+  assignment: |-
+    # Creating a folder
+
+    In this very simple step, we're are going to be creating a simple folder with the name `some-folder`. Use the command below to create your folder.
+
+    ```
+    mkdir some-folder
+    ```
+
+    ## Checking if the folder was created
+
+    Once you have created the folder with the command above, click the green 'Check' button in the bottom right to check whether the folder was created successfully.
+  tabs:
+  - title: Shell
+    type: terminal
+    hostname: shell
+  difficulty: basic
+  timelimit: 600
+checksum: "58799756355579309"
