@@ -1,10 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 #
 # This script runs when the platform check the challenge.
 #
 # The platform determines if the script was successful using the exit code of this
 # script. If the exit code is not 0, the script fails. 
 #
+
+if ! docker image ls | grep -q "some-image"; then
+    fail-message "Couldn't find an image with the name some-image"
+    exit 1
+fi
 
 echo "This is the check script"
 

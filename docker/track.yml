@@ -1,36 +1,95 @@
 slug: docker-vm-template
 id: jvuyehbycidz
 type: track
-title: Docker VM Template
-teaser: A short description of the track.
+title: Docker Template
+teaser: Learn how to guide learners with interactive feedback in this longer track
+  with hints and automated checks.
 description: |-
-  A long description of the track.
-
-  You can use any GitHub flavoured markdown.
+  # Docker Template
+  In this basic track, you will learn how to guide
+  ## Get started using this template
+  Copy this template by running the following command:
+  ```
+  instruqt track create \
+      my-org/my-new-track \
+      --from templates/docker \
+      --title "My new track"
+  ```
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
 tags: []
 owner: templates
 developers:
 - bruno@instruqt.com
+- victor@instruqt.com
 private: false
 published: false
 challenges:
-- slug: docker-challenge
+- slug: building-an-image
   id: gpsc9fa6cy3c
   type: challenge
-  title: Docker challenge
-  teaser: A short description of the challenge.
+  title: Creating a docker image challenge
+  teaser: This challenge provides a walkthrough on how to create a docker image.
   notes:
   - type: text
-    contents: Replace this text with your own text
+    contents: Docker enables you to separate your applications from your infrastructure.
+      With Docker, you can manage your infrastructure in the same ways you manage
+      your applications.
+  - type: text
+    contents: Creating images with docker guarantees that the image created will always
+      work independently of the OS as long as docker is installed.
   assignment: |-
-    The assignment the participant needs to complete in order to proceed.
-
-    You can use any GitHub flavoured markdown.
+    Write or copy and paste the following command to build a docker image based on the `Dockerfile` located in the `Editor` tab.
+    ```
+    docker build -t some-image .
+    ```
+    Once the command has been executed, you can check whether the image was successfully built with the correct name, by clicking `Check`.
+    In this example, the Dockerfile only contains a simple image of nginx.
   tabs:
-  - title: Docker
+  - title: terminal
     type: terminal
     hostname: docker
+  - title: editor
+    type: code
+    hostname: docker
+    path: /root
   difficulty: basic
   timelimit: 600
-checksum: "1938991020740321370"
+- slug: running-a-container
+  id: kkhgxjyqzb4e
+  type: challenge
+  title: Running docker container challenge
+  teaser: This challenge provides a walkthrough on how to run a docker container after
+    creating an image.
+  notes:
+  - type: text
+    contents: Docker images can be started as containers independent of the platform
+      being used as long as docker is installed.
+  assignment: |-
+    Once you have your docker image built, you can run it in a container, by executing the following command:
+    ```
+    docker run --name some-container -p 80:80 -d some-image
+    ```
+    Check the services tab to verify the service is running.
+
+    Congratulations! You have successfully run the container. You can now click `Check` to continue to the next step.
+
+    Once the command has been executed, you can check if the container is running by executing:
+    ```
+    docker container ls
+    ```
+    You should see a list of all containers on the vm, one of them should be named `some-container`.
+  tabs:
+  - title: terminal
+    type: terminal
+    hostname: docker
+  - title: editor
+    type: code
+    hostname: docker
+    path: /root
+  - title: service
+    type: service
+    hostname: docker
+    port: 80
+  difficulty: basic
+  timelimit: 600
+checksum: "17268462691981126152"
