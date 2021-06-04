@@ -1,13 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 #
-# This script runs when the platform check the challenge.
-#
-# The platform determines if the script was successful using the exit code of this
-# script. If the exit code is not 0, the script fails. 
+# The check script runs after a learner pressed the "Check" button. The check 
+# script is used to validate if the learner solved the challenge. 
 #
 
-if ! docker container ls | grep -q "some-container"; then
-    fail-message "Couldn't find a container with the name some-container"
+if ! docker container ls | grep -q "my-service"; then
+    fail-message "Couldn't find a container with the name my-service"
     exit 1
 fi
 

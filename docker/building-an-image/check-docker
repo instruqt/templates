@@ -1,16 +1,10 @@
 #!/bin/bash
 #
-# This script runs when the platform check the challenge.
-#
-# The platform determines if the script was successful using the exit code of this
-# script. If the exit code is not 0, the script fails. 
+# The check script runs after a learner pressed the "Check" button. The check 
+# script is used to validate if the learner solved the challenge. 
 #
 
-if ! docker image ls | grep -q "some-image"; then
-    fail-message "Couldn't find an image with the name some-image"
+if ! docker image ls | grep -q "my-service"; then
+    fail-message "Couldn't find an image with the name my-service"
     exit 1
 fi
-
-echo "This is the check script"
-
-exit 0
