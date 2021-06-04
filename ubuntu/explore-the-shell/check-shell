@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Checking if the folder: 'some-folder' exists."
+echo "Checking if the folder: 'instruqt' exists."
 
-if [ -d /root/some-folder ]
+if [ -d /root/instruqt ]
 then
-    echo "The folder 'some-folder' exists!"
+    echo "The folder 'instruqt' exists!"
 else
-    fail-message "The folder 'some-folder' doesn't exist!"
+    fail-message "The folder 'instruqt' doesn't exist!"
 
     exit 1
 fi
