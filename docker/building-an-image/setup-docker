@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# The setup script runs before the challenge starts.
+#
+
+touch Dockerfile
+
+cat <<EOT >> Dockerfile
+FROM nginx
+EOT
