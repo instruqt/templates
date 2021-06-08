@@ -33,21 +33,18 @@ challenges:
   - type: text
     contents: |
       # Learn about Docker
-      Docker enables you to separate your applications from your infrastructure.
-      With Docker, you can manage your infrastructure in the same ways you manage
-      your applications.
+      Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
   - type: text
     contents: |
       # Creating a Docker image
       Creating images with Docker guarantees that the image created will always
       work independently of the OS as long as Docker is installed.
   assignment: |-
-    Write or copy and paste the following command to build a Docker image based on the `Dockerfile` located in the `Editor` tab.
+    Write or copy and paste the following command to build a Docker image based on the `Dockerfile` in the editor tab.
     ```
     docker build -t my-service .
     ```
-    Once the command has been executed, you can check whether the image was successfully built with the correct name, by clicking `Check`.
-    In this example, the Dockerfile only contains a simple image of nginx.
+    Verify the challenge by clicking 'Check' button.
   tabs:
   - title: terminal
     type: terminal
@@ -76,13 +73,11 @@ challenges:
     ```
     Check the services tab to verify the service is running.
 
-    Congratulations! You have successfully run the container. You can now click `Check` to continue to the next step.
-
-    Once the command has been executed, you can check if the container is running by executing:
+    You can verify if the container is running by executing:
     ```
     docker container ls
     ```
-    You should see a list of all containers on the vm, one of them should be named `some-container`.
+    This shows a list of all running containers.
   tabs:
   - title: terminal
     type: terminal
@@ -97,4 +92,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "13736754255296980206"
+checksum: "10693767999998617262"
