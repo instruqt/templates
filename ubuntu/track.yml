@@ -1,0 +1,50 @@
+slug: ubuntu-template
+id: i7hvacvj15xi
+type: track
+title: Basic Ubuntu Template
+teaser: This is the most basic Instruqt track. Get started quickly with just one sandbox
+  container.
+description: |-
+  # Ubuntu Container
+
+  A basic Instruqt track. Get started quickly with just one sandbox container.
+
+  ## Get started with this template
+  Copy this template by running:
+
+  ```
+  instruqt track create \
+      <my-org>/my-new-track \
+      --from templates/ubuntu \
+      --title "My new track"
+  ```
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: templates
+developers:
+- matthisk@instruqt.com
+- victor@instruqt.com
+- bruno@instruqt.com
+private: false
+published: true
+challenges:
+- slug: explore-the-shell
+  id: gzmxcvgqwg6r
+  type: challenge
+  title: Creating a folder in Ubuntu
+  teaser: Learn how to create folder in Ubuntu.
+  assignment: |-
+    Let's create a folder named `instruqt`. Use the `mkdir` command to create the folder:
+
+    ```
+    mkdir instruqt
+    ```
+
+    To complete this track click the 'Check' button.
+  tabs:
+  - title: Shell
+    type: terminal
+    hostname: shell
+  difficulty: basic
+  timelimit: 600
+checksum: "14545123068524023887"

@@ -1,0 +1,6 @@
+version: "2"
+containers:
+- name: shell
+  image: ubuntu
+  shell: /bin/bash
+  memory: 256
