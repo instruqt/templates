@@ -40,11 +40,11 @@ challenges:
     mkdir instruqt
     ```
 
-    Once you have created the folder with the command above, click the green 'Check' button in the bottom right to check whether the folder was created successfully.
+    To complete this track click the 'Check' button.
   tabs:
   - title: Shell
     type: terminal
     hostname: shell
   difficulty: basic
   timelimit: 600
-checksum: "6322117263102862984"
+checksum: "14545123068524023887"
