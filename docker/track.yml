@@ -18,11 +18,11 @@ icon: https://cdn.instruqt.com/assets/templates/docker.png
 tags: []
 owner: templates
 developers:
+- matthisk@instruqt.com
 - bruno@instruqt.com
 - victor@instruqt.com
-- matthisk@instruqt.com
 private: false
-published: false
+published: true
 challenges:
 - slug: building-an-image
   id: gpsc9fa6cy3c
@@ -97,4 +97,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "10402782095063684857"
+checksum: "13736754255296980206"
