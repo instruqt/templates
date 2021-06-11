@@ -1,0 +1,107 @@
+slug: kubernetes
+id: 2oyyigiins2l
+type: track
+title: Kubernetes Template
+teaser: Learn how to build Kubernetes-based tracks with this template.
+description: Learn how to build Kubernetes-based tracks with this template.
+icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
+tags: []
+owner: templates
+developers:
+- wietse@instruqt.com
+private: false
+published: false
+challenges:
+- slug: 01-deploy-nginx
+  id: pktq0iq2kvsv
+  type: challenge
+  title: Deploy NGINX
+  teaser: Everything starts with a webserver
+  notes:
+  - type: text
+    contents: Replace this text with your own text
+  assignment: |-
+    Use the terminal to deploy nginx:
+
+    ```
+    kubectl create deployment nginx --image nginx
+    ```
+
+    If you press check, Instruqt runs this (user-defined) script
+    to
+  tabs:
+  - title: Shell
+    type: terminal
+    hostname: kubernetes
+  difficulty: basic
+  timelimit: 600
+- slug: 02-expose-service
+  id: bbl3pwvuemnz
+  type: challenge
+  title: Expose the NGINX service
+  teaser: Use a NodePort to expose the NGINX webserver
+  notes:
+  - type: text
+    contents: Replace this text with your own text
+  assignment: |-
+    Use the terminal to add a NodePort service:
+
+    ```
+    kubectl apply -f service.yml
+    ```
+  tabs:
+  - title: Shell
+    type: terminal
+    hostname: kubernetes
+  - title: NodePort
+    type: service
+    hostname: kubernetes
+    path: /
+    port: 30001
+  difficulty: basic
+  timelimit: 600
+- slug: 03-showing-the-service
+  id: hf1cxaci8cih
+  type: challenge
+  title: Viewing NGINX
+  teaser: Use a NodePort to expose the NGINX webserver
+  notes:
+  - type: text
+    contents: Replace this text with your own text
+  assignment: This is an embedded nginx tab.
+  tabs:
+  - title: NodePort
+    type: service
+    hostname: kubernetes
+    path: /
+    port: 30001
+  difficulty: basic
+  timelimit: 600
+- slug: 04-kubernetes-dashboard
+  id: 1hxxjsbh4pda
+  type: challenge
+  title: Kubernetes Dashboard
+  teaser: Expose the kubernetes dashboard in a tab
+  assignment: |-
+    ## Using the Kubernetes Dashboard
+
+    *Step 1:*
+    To get the token, copy and run this snippet
+    ```
+    ./token.sh
+    ```
+
+    *Step 2:*
+    To login to the dashboard, use the token in the second tab.
+  tabs:
+  - title: Shell
+    type: terminal
+    hostname: kubernetes
+  - title: Kubernetes Dashboard
+    type: service
+    hostname: kubernetes
+    path: /api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+    port: 8001
+  difficulty: basic
+  timelimit: 600
+checksum: "3049094730455855599"
