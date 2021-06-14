@@ -13,7 +13,7 @@ description: |-
   ```
   instruqt track create \
       my-org/my-new-track \
-      --from templates/docker \
+      --from templates/docker-vm \
       --title "My Docker track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/docker.png

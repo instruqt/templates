@@ -15,7 +15,7 @@ description: |-
   ```
   instruqt track create \
       <my-org>/my-new-track \
-      --from templates/ubuntu \
+      --from templates/container \
       --title "My new track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
