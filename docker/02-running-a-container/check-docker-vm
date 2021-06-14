@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ! docker container ls | grep -q "my-service"; then
+    fail-message "There is no running container 'my-service'. Did you run it?"
+    exit 1
+fi
+

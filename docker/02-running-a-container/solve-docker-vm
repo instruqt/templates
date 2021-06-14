@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --name my-service -p 80:80 -d my-service

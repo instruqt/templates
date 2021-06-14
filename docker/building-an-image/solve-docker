@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# The solve script solves the current challenge to allow the learner to skip a challenge.
-#
-
-docker build -t my-service .
-
-echo "This is the solve script"

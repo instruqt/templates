@@ -1,95 +1,109 @@
-slug: docker-vm-template
-id: jvuyehbycidz
+slug: docker-vm
+id: yupu9n2lqaf9
 type: track
-title: Docker VM Template
-teaser: Get started quickly with a VM containing a Docker host.
+title: Virtual Machine with Docker
+teaser: Get started quickly with Docker on a virtual machine
 description: |-
-  # Docker VM Template
-  Get started quickly with a Docker VM.
-  ## Get started using this template
-  Copy this template by running the following command:
+  # Virtual Machine with Docker
+  To build and run container images, you need a virtual machine. This track
+  show you how to do just that.
+
+  ## Use this template
+  To start your own track from this template, run this command:
   ```
   instruqt track create \
       my-org/my-new-track \
       --from templates/docker \
-      --title "My new track"
+      --title "My Docker track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/docker.png
-tags: []
+tags:
+- CLI
 owner: templates
 developers:
-- matthisk@instruqt.com
-- bruno@instruqt.com
 - victor@instruqt.com
+- matthisk@instruqt.com
+- wietse@instruqt.com
 private: false
 published: true
 challenges:
-- slug: building-an-image
-  id: gpsc9fa6cy3c
+- slug: 01-building-an-image
+  id: byu3brcy2bwh
   type: challenge
-  title: Creating a Docker image challenge
-  teaser: This challenge provides a walkthrough on how to create a Docker image.
+  title: Building a container image
+  teaser: Learn how to build an image using a Dockerfile
   notes:
   - type: text
     contents: |
       # Learn about Docker
-      Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
-  - type: text
-    contents: |
-      # Creating a Docker image
-      Creating images with Docker guarantees that the image created will always
-      work independently of the OS as long as Docker is installed.
-  assignment: |-
-    Write or copy and paste the following command to build a Docker image based on the `Dockerfile` in the editor tab.
+      Docker is an open platform for developing, shipping, and running applications.
+      Docker enables you to separate your applications from your infrastructure so
+      you can deliver software quickly. Containers run anywhere!
+
+      In this first challenge, you'll create a container image. Please wait while we
+      boot a virtual machine for you.
+  assignment: |
+    Use this command to build a Docker image using the Dockerfile in
+    this directory:
+
     ```
     docker build -t my-service .
     ```
-    Verify the challenge by clicking 'Check' button.
+
+    \U0001F449 Did you notice the tab with the source code editor, next to
+    the terminal?
+
+    To complete the
+    challenge, press **Check**."
   tabs:
-  - title: terminal
+  - title: Terminal
     type: terminal
-    hostname: docker
-  - title: editor
+    hostname: docker-vm
+  - title: Editor
     type: code
-    hostname: docker
-    path: /root
+    hostname: docker-vm
+    path: /app
   difficulty: basic
   timelimit: 600
-- slug: running-a-container
-  id: kkhgxjyqzb4e
+- slug: 02-running-a-container
+  id: irx7r6fg8gs6
   type: challenge
-  title: Start a Docker container
-  teaser: This challenge provides a walkthrough on how to run a Docker container.
+  title: Starting a container
+  teaser: Start the container image you've just built
   notes:
   - type: text
     contents: |
-      # How to start a Docker container
-      Docker images can be started as containers independent of the platform
-      being used as long as Docker is installed.
+      # Starting a container image
+      Container images can be started any where a container runtime is installed. 
   assignment: |-
-    Now that you have built a Docker image, you can run it in a container. Run the following command to start the container:
+    Now that you have built a container image, you can run it.
+
+    ## Step 1
+    Run the following command to start the container:
     ```
     docker run --name some-container -p 80:80 -d my-service
     ```
-    Check the services tab to verify the service is running.
 
-    You can verify if the container is running by executing:
+    ## Step 2
+    Check the nginx tab (next the the terminal tab) to verify if the container is running.
+    You should see a "Welcom to nginx" message
+
+    ## Step 3
+    To verify if the container is running using the command line, run this command:
     ```
     docker container ls
     ```
-    This shows a list of all running containers.
+
+    ## Check
+    To complete this track, press **Check**
   tabs:
-  - title: terminal
+  - title: Terminal
     type: terminal
-    hostname: docker
-  - title: editor
-    type: code
-    hostname: docker
-    path: /root
-  - title: service
+    hostname: docker-vm
+  - title: nginx
     type: service
-    hostname: docker
+    hostname: docker-vm
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "10693767999998617262"
+checksum: "1465596921854930597"

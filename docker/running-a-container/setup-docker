@@ -1,6 +1,0 @@
-#!/bin/sh
-#
-# The setup script runs before the challenge starts.
-#
-
-echo "This is the setup script"
