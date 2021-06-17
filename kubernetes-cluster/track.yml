@@ -2,8 +2,10 @@ slug: kubernetes-cluster
 id: bt1exfqalhsm
 type: track
 title: Multi node Kubernetes cluster
-teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
-description: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
+teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node
+  template.
+description: Teach advanced features like pod affinity and anti-affinity with this
+  multi-node template.
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags:
 - ""
@@ -32,4 +34,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 500
-checksum: "1754064696959497826"
+checksum: "13763539058340113158"

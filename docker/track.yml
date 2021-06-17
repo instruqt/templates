@@ -73,7 +73,7 @@ challenges:
   - type: text
     contents: |
       # Starting a container image
-      Container images can be started any where a container runtime is installed. 
+      Container images can be started any where a container runtime is installed.
   assignment: |-
     Now that you have built a container image, you can run it.
 
@@ -105,4 +105,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "1465596921854930597"
+checksum: "9431383836879796292"
