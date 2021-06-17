@@ -2,7 +2,7 @@ slug: kubernetes
 id: nh6y2sxf5rlt
 type: track
 title: Kubernetes
-teaser: Learn how to build Kubernetes-based tracks with this template.
+teaser: Learn how to build Kubernetes-based tracks with this template
 description: |-
   Learn how to build Kubernetes-based tracks with this template.
 
@@ -130,4 +130,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 600
-checksum: "3583319668993366260"
+checksum: "10258749663344516427"

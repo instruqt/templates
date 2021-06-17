@@ -2,7 +2,7 @@ slug: docker-vm
 id: yupu9n2lqaf9
 type: track
 title: Virtual Machine with Docker
-teaser: Get started quickly with Docker on a virtual machine
+teaser: Build and run container images with Docker on a virtual machine
 description: |-
   # Virtual Machine with Docker
   To build and run container images, you need a virtual machine. This track

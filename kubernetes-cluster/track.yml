@@ -1,0 +1,35 @@
+slug: kubernetes-cluster
+id: bt1exfqalhsm
+type: track
+title: Multi node Kubernetes cluster
+teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
+description: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
+icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
+tags:
+- ""
+owner: templates
+developers:
+- ade@instruqt.com
+- wietse@instruqt.com
+private: false
+published: false
+show_timer: true
+challenges:
+- slug: explore-kubernetes
+  id: 2cw1yhoxhdo2
+  type: challenge
+  title: Explore Kubernetes
+  teaser: Explore Kubernetes
+  assignment: Explore Kubernetes
+  tabs:
+  - title: Server
+    type: terminal
+    hostname: server
+  - title: Kubernetes Dashboard
+    type: service
+    hostname: server
+    path: /api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#!/
+    port: 8001
+  difficulty: basic
+  timelimit: 500
+checksum: "1754064696959497826"
