@@ -1,0 +1,5 @@
+#!/bin/bash -le
+
+grep -q "kubectl get nodes" /root/.bash_history || fail-message "Don't forget to list all the nodes with kubectl get nodes"
+
+grep -q "token" /root/.bash_history || fail-message "Did you login to the Kubernetes Dashboard using the output from ./token.sh?"

@@ -6,13 +6,12 @@ teaser: Learn how to build Kubernetes-based tracks with this template
 description: |-
   Learn how to build Kubernetes-based tracks with this template.
 
-  ## Use this template
-  To copy this template, run this command:
+  ## Using this template
+  To create your own track from this template, run this command:
   ```
   instruqt track create \
-      my-org/my-new-track \
-      --from templates/kubernetes \
-      --title "My Kubernetes track"
+    --from templates/kubernetes \
+    --title "My Kubernetes track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags: []

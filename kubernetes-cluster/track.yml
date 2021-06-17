@@ -4,8 +4,19 @@ type: track
 title: Multi node Kubernetes cluster
 teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node
   template.
-description: Teach advanced features like pod affinity and anti-affinity with this
+description: |-
+  Teach advanced features like pod affinity and anti-affinity with this
   multi-node template.
+
+  This track is based on the k3s image we maintain.
+
+  ## Using this template
+  To create your own track from this template, run this command:
+  ```
+  instruqt track create \
+    --from templates/kubernetes-cluster \
+    --title "My Kubernetes cluster track"
+  ```
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags:
 - ""
@@ -14,7 +25,7 @@ developers:
 - ade@instruqt.com
 - wietse@instruqt.com
 private: false
-published: false
+published: true
 show_timer: true
 challenges:
 - slug: explore-kubernetes
@@ -22,7 +33,32 @@ challenges:
   type: challenge
   title: Explore Kubernetes
   teaser: Explore Kubernetes
-  assignment: Explore Kubernetes
+  notes:
+  - type: text
+    contents: |-
+      This track shows a multi-node Kubernetes cluster with one server
+      and two worker nodes.
+
+      Please wait while we provision the sandbox.
+  assignment: |-
+    To complete this track, use `kubectl` to
+    print all nodes in the cluster.
+
+    ## Step 1
+    List the three nodes in the cluster
+    ```
+    kubectl get nodes
+    ```
+
+    ## Step 2
+    Open the second tab (next to the terminal) with the Kubernetes Dashboard.
+
+    To login, use the token you can print with this command:
+    ```
+    ./token.sh
+    ```
+
+    Press **Check** to finish the track.
   tabs:
   - title: Server
     type: terminal
@@ -34,4 +70,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 500
-checksum: "13763539058340113158"
+checksum: "8079327670576597111"

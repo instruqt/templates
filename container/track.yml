@@ -9,12 +9,10 @@ description: |-
 
   A basic Instruqt track. Get started quickly with just one sandbox container.
 
-  ## Use this template
-  To copy this template, run this command:
-
+  ## Using this template
+  To create your own track from this template, run this command:
   ```
   instruqt track create \
-      <my-org>/my-new-track \
       --from templates/container \
       --title "My new track"
   ```

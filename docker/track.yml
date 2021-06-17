@@ -8,11 +8,10 @@ description: |-
   To build and run container images, you need a virtual machine. This track
   show you how to do just that.
 
-  ## Use this template
-  To start your own track from this template, run this command:
+  ## Using this template
+  To create your own track from this template, run this command:
   ```
   instruqt track create \
-      my-org/my-new-track \
       --from templates/docker-vm \
       --title "My Docker track"
   ```
@@ -49,7 +48,7 @@ challenges:
     docker build -t my-service .
     ```
 
-    \U0001F449 Did you notice the tab with the source code editor, next to
+    Did you notice the tab with the source code editor, next to
     the terminal?
 
     To complete the
@@ -105,4 +104,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "9431383836879796292"
+checksum: "12528409000662385147"
