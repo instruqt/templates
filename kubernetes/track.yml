@@ -15,8 +15,7 @@ description: |-
       --title "My Kubernetes track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
-tags:
-- CLI
+tags: []
 owner: templates
 developers:
 - wietse@instruqt.com

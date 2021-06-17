@@ -19,8 +19,7 @@ description: |-
       --title "My new track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
-tags:
-- CLI
+tags: []
 owner: templates
 developers:
 - victor@instruqt.com

@@ -17,8 +17,7 @@ description: |-
       --title "My Docker track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/docker.png
-tags:
-- CLI
+tags: []
 owner: templates
 developers:
 - victor@instruqt.com
