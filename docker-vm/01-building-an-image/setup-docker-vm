@@ -1,10 +1,5 @@
 #!/bin/bash
-
-# Wait for the Instruqt host bootstrap to finish
-until [ -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
-do
-    sleep 1
-done
+echo "Running challenge setup script on host docker-vm"
 
 # Initialize the home directory with the Dockerfile
 mkdir /app

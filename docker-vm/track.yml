@@ -1,5 +1,5 @@
 slug: docker-vm
-id: yupu9n2lqaf9
+id: uzxqici3wh6h
 type: track
 title: Virtual Machine with Docker
 teaser: Build and run container images with Docker on a virtual machine
@@ -26,7 +26,7 @@ private: false
 published: true
 challenges:
 - slug: 01-building-an-image
-  id: byu3brcy2bwh
+  id: 5pfctcg5dylf
   type: challenge
   title: Building a container image
   teaser: Learn how to build an image using a Dockerfile
@@ -64,7 +64,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: 02-running-a-container
-  id: irx7r6fg8gs6
+  id: fty3fwbuybcd
   type: challenge
   title: Starting a container
   teaser: Start the container image you've just built
@@ -104,4 +104,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "12528409000662385147"
+checksum: "543806530193944329"

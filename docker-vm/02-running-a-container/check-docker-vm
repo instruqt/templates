@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Running challenge check script on host docker-vm"
 
 if ! docker container ls | grep -q "my-service"; then
     fail-message "There is no running container 'my-service'. Did you run it?"
