@@ -1,5 +1,5 @@
 slug: kubernetes-cluster
-id: bt1exfqalhsm
+id: 2lb3tdzl8dan
 type: track
 title: Multi node Kubernetes cluster
 teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node
@@ -29,7 +29,7 @@ published: true
 show_timer: true
 challenges:
 - slug: explore-kubernetes
-  id: 2cw1yhoxhdo2
+  id: e6izfra7vgpl
   type: challenge
   title: Explore Kubernetes
   teaser: Explore Kubernetes
@@ -70,4 +70,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 500
-checksum: "8079327670576597111"
+checksum: "3154146811366027285"
