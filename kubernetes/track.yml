@@ -1,5 +1,5 @@
 slug: kubernetes
-id: nh6y2sxf5rlt
+id: e9kwwum26pn3
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
@@ -22,7 +22,7 @@ private: false
 published: true
 challenges:
 - slug: 01-deploying-nginx
-  id: xuibgrtghrki
+  id: cm3mp385y082
   type: challenge
   title: Deploy NGINX
   teaser: Everything starts with a webserver
@@ -53,14 +53,13 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: 02-exposing-nginx
-  id: nkjpo8cid18x
+  id: 7oqpyx3avcwm
   type: challenge
   title: Expose the NGINX service
   teaser: Use a NodePort to expose the NGINX webserver
   notes:
   - type: text
-    contents: You've just deployed NGINX. To view the deployment, create a NodePort
-      service for it.
+    contents: You've just deployed NGINX. To view the deployment, create a NodePort service for it.
   assignment: |-
     Use the terminal to add a NodePort service:
 
@@ -79,7 +78,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: 03-showing-the-service
-  id: 4rmatueynfmw
+  id: qh8v1izdymkq
   type: challenge
   title: Viewing NGINX
   teaser: View the service in an embedded tab
@@ -101,7 +100,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: 04-kubernetes-dashboard
-  id: lpcxlrog6msl
+  id: lz3wgs4qaigx
   type: challenge
   title: Kubernetes Dashboard
   teaser: Expose the kubernetes dashboard in a tab
@@ -128,4 +127,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 600
-checksum: "3360704779682100400"
+checksum: "9418630198834669245"
