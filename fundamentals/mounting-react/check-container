@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# This is a sample check script. Rename this file to check-$CONTAINER
+# (where $container is the name of the container as defined in your config.yml),
+# and replace this content with your own script.
+#
+# This script will be run when you check the challenge.
+#
+# Remember that the exit code is important. See the documentation
+# for more information.
+#
+
+echo "This is the check script"
+
+query1="ReactDOM.render(<Greeting />, rootNode)"
+query2="ReactDOM.render(<Greeting />,rootNode)"
+query3="ReactDOM.render(<Greeting/>,rootNode)"
+# path="/Users/hollanderbart/Projects/Xebia/Instruqt/instruqt-react-curriculum/react-foundation/docker/code-challenges/fundamentals/mounting-react/src/index.js"
+path="/app/src/index.js"
+
+echo "Checking if script contains '$query1' in '$path'"
+# grepIfFileContainsString="/Users/hollanderbart/Projects/Xebia/Instruqt/instruqt-react-curriculum/react-foundation/docker/helper-scripts/grepIfFileContainsString"
+grepIfFileContainsString="/helper-scripts/grepIfFileContainsString"
+fileContainsString1=$("$grepIfFileContainsString" "$query1" "$path")
+
+echo "Checking if script contains '$query2' in '$path'"
+fileContainsString2=$("$grepIfFileContainsString" "$query2" "$path")
+
+echo "Checking if script contains '$query3' in '$path'"
+fileContainsString3=$("$grepIfFileContainsString" "$query3" "$path")
+
+echo $fileContainsString1 $fileContainsString2 $fileContainsString3
+if [ "$fileContainsString1" -eq 1 ] && [ "$fileContainsString2" -eq 1 ] && [ "$fileContainsString3" -eq 1 ]; then
+  fail-message "You're almost there. Make sure to find the root node with id 'root' and using 'ReactDOM.render' to render the Greeting component."
+  exit 1
+else
+  echo "Correct"
+  exit 0
+fi

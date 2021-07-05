@@ -1,0 +1,31 @@
+#!/bin/sh
+#
+# This is a sample check script. Rename this file to check-$CONTAINER
+# (where $container is the name of the container as defined in your config.yml),
+# and replace this content with your own script.
+#
+# This script will be run when you check the challenge.
+#
+# Remember that the exit code is important. See the documentation
+# for more information.
+#
+
+echo "This is the check script"
+
+/app/node_modules/.bin/jest --config ./config/jest.config.js --silent --no-color 2> jestOutput.txt
+
+query="FAIL"
+path="./jestOutput.txt"
+
+grepIfFileContainsString="/helper-scripts/grepIfFileContainsString"
+fileContainsString=$("$grepIfFileContainsString" "$query" "$path")
+
+if [ "$fileContainsString" -eq 0 ]
+then
+    echo "Failure: Jest failed." >&2
+    fail-message "It seems you need to do a little more. Make sure that the products list has been added to the ShoppingList props, and you display the product's amount and title"
+    exit 1
+else
+    echo "Success: Jest succeeded."
+    exit 0
+fi

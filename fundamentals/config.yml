@@ -1,0 +1,10 @@
+version: "2"
+containers:
+- name: container
+  image: gcr.io/instruqt-xebia/react-foundation-code-server
+  cmd: code-server workspace /app/src --auth none --disable-telemetry
+  shell: /bin/bash
+  ports:
+  - 8080
+  - 9090
+  memory: 5000
