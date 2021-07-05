@@ -1,18 +1,9 @@
-#!/bin/sh
-#
-# This is a sample solve script. Rename this file to solve-$CONTAINER
-# (where $container is the name of the container as defined in your config.yml),
-# and replace this content with your own script.
-#
-# This script will be run when you solve the challenge.
-#
-# Remember that the exit code is important. See the documentation
-# for more information.
-#
+#!/bin/bash
 
-echo "this is the solve script"
+cat <<EOF > /app/src/sum.ts
+const sum = (a: number, b: number): number => {
+  return a + b;
+};
 
-sh /helper-scripts/isDevelopmentServerRunning
-cp -rT /code-challenges/fundamentals/mounting-react/solution /app/src
-
-exit 0
+export default sum;
+EOF
