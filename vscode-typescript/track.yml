@@ -1,7 +1,7 @@
-slug: fundamentals
+slug: vscode-typescript
 id: ir7yr6ycj3wd
 type: track
-title: Fundamentals
+title: VSCode / TypeScript
 teaser: Learn the basics of React.
 description: React is a Javascript library, developed in 2013 by Facebook. React is popular because of it's simplicity for building declarative user interfaces. This track will take you through the fundamentals of React development.
 icon: https://storage.googleapis.com/instruqt-react-foundation/react-2.png
