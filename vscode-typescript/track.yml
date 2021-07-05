@@ -13,7 +13,7 @@ owner: xebia
 developers:
 - bdenhollander@xebia.com
 private: true
-published: true
+published: false
 show_timer: true
 challenges:
 - slug: mounting-react
