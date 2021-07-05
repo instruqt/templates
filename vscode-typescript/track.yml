@@ -1,5 +1,5 @@
 slug: vscode-typescript
-id: ir7yr6ycj3wd
+id: 0dxngfkws4op
 type: track
 title: VSCode / TypeScript
 teaser: Learn the basics of React.
@@ -11,13 +11,13 @@ tags:
 - front-end
 owner: templates
 developers:
-- bdenhollander@xebia.com
+- borodean@gmail.com
 private: true
 published: false
 show_timer: true
 challenges:
 - slug: mounting-react
-  id: yivafcxiwtud
+  id: nyhvgyg1ag1x
   type: challenge
   title: "\U0001F3D7 Mounting React"
   teaser: Start by inserting React in a website.
@@ -52,4 +52,4 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 2000
-checksum: "12796080506793515769"
+checksum: "4272907750771923973"
