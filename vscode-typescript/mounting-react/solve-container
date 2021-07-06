@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Running challenge solve script on host container"
 
 cat <<EOF > /app/src/sum.ts
 const sum = (a: number, b: number): number => {

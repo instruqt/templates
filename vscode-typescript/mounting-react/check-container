@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Running challenge check script on host container"
 
 # Change directory to the cloned repository and run the tests
 cd /app
