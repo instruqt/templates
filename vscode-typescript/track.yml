@@ -51,5 +51,5 @@ challenges:
     hostname: container
     port: 8080
   difficulty: basic
-  timelimit: 2000
-checksum: "8021988813499442478"
+  timelimit: 600
+checksum: "846713574992144745"
