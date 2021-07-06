@@ -1,3 +1,5 @@
 #!/bin/bash
 
+# Change directory to the cloned repository and run the tests
+cd /app
 npm test
