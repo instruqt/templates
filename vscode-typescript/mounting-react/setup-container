@@ -9,6 +9,9 @@ apt-get install -y nodejs
 # Clone the example repository
 git clone https://github.com/borodean/typescript-example-app.git /app
 
+# Remove return statements to break the tests
+ex +g/return/d -cwq /app/src/sum.ts
+
 # Change directory to the cloned repository and install its dependencies
 cd /app
 npm ci

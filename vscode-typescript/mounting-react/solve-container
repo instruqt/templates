@@ -1,10 +1,6 @@
 #!/bin/bash
 echo "Running challenge solve script on host container"
 
-cat <<EOF > /app/src/sum.ts
-const sum = (a: number, b: number): number => {
-  return a + b;
-};
-
-export default sum;
-EOF
+# Reset the file to the state that passes the tests
+cd /app
+git checkout src/sum.ts
