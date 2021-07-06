@@ -1,10 +1,14 @@
 #!/bin/bash
 echo "Running challenge setup script on host container"
 
+# Install Node.js
+# https://github.com/nodesource/distributions/blob/master/README.md
 curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 
+# Clone the example repository
 git clone https://github.com/borodean/typescript-example-app.git /app
 
+# Change directory to the cloned repository and install its dependencies
 cd /app
 npm ci
