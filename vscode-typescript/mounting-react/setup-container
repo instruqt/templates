@@ -5,3 +5,6 @@ curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 
 git clone https://github.com/borodean/typescript-example-app.git /app
+
+cd /app
+npm ci
