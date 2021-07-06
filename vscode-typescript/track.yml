@@ -2,49 +2,44 @@ slug: vscode-typescript
 id: 0dxngfkws4op
 type: track
 title: VSCode / TypeScript
-teaser: Learn the basics of React.
-description: React is a Javascript library, developed in 2013 by Facebook. React is popular because of it's simplicity for building declarative user interfaces. This track will take you through the fundamentals of React development.
-icon: https://storage.googleapis.com/instruqt-react-foundation/react-2.png
-tags:
-- development
-- React
-- front-end
+teaser: Edit and test TypeScript applications in VSCode
+description: |-
+  A basic track for editing a TypeScript application and running tests for it.
+  The track checks are failing based on the test results.
+
+  ## Using this template
+  To create your own track from this template, run this command:
+  ```
+  instruqt track create \
+      --from templates/container \
+      --title "My VSCode / TypeScript track"
+  ```
+icon: https://cdn.jsdelivr.net/gh/remojansen/logo.ts@1ff5efb/ts.png
+tags: []
 owner: templates
 developers:
 - borodean@gmail.com
 private: true
 published: false
-show_timer: true
 challenges:
-- slug: mounting-react
-  id: nyhvgyg1ag1x
+- slug: 01-passing-tests
+  id: kgsrl1diqfpz
   type: challenge
-  title: "\U0001F3D7 Mounting React"
-  teaser: Start by inserting React in a website.
-  notes:
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/Mounting%20React%20-%20front.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/React.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/Why%20React%3F.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/React%20Is%20Just%20The%20UI.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/Mounting%20to%20a%20document.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/Mounting%20to%20a%20document%20-%202.svg
-  - type: image
-    url: https://storage.googleapis.com/instruqt-react-foundation/fundamentals/Mounting%20React%20-%20assignment.svg
+  title: Passing tests
+  teaser: Learn how to run and pass tests
   assignment: |-
-    In order to insert React to a website, we need to find the root node of the HTML document.
-    From this node React can build up the app you're creating.
+    ## Step 1
+    Click "Explorer" > "NPM Scripts" to open the corresponding panel.
+    Run the "test" task from it.
 
-    - Use the index.js file to mount the Greeting component into the root element with id: root.
+    The tests should run, and you should see the failing one in the terminal panel.
 
-    Hint: [Document.getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+    ## Step 2
+    Update the function in src/sum.ts to correctly return the sum.
+    At this point you might want to re-run the tests to see whether the fix is helping.
 
-    Hint: [ReactDOM.render](https://reactjs.org/docs/react-dom.html#render)
+    ## Check
+    To complete this track, press **Check**. It will ran the tests and pass if all the tests are passing.
   tabs:
   - title: Code editor
     type: service
@@ -52,4 +47,4 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 600
-checksum: "846713574992144745"
+checksum: "16839098736268116243"
