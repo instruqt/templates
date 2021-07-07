@@ -1,0 +1,7 @@
+version: "2"
+containers:
+- name: container
+  image: codercom/code-server
+  cmd: code-server workspace /app --user-data-dir /user-data --auth none --disable-telemetry
+  ports:
+  - 8080

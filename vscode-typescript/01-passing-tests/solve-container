@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Running challenge solve script on host container"
+
+# Reset the file to the state that passes the tests
+cd /app
+git checkout src/sum.ts
