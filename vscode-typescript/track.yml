@@ -14,7 +14,7 @@ description: |-
       --from templates/container \
       --title "My VSCode / TypeScript track"
   ```
-icon: https://cdn.jsdelivr.net/gh/remojansen/logo.ts@1ff5efb/ts.png
+icon: https://cdn.instruqt.com/assets/templates/ts.png
 tags: []
 owner: templates
 developers:
