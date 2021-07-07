@@ -1,7 +1,7 @@
 slug: vscode-typescript
 id: 0dxngfkws4op
 type: track
-title: VSCode / TypeScript
+title: VSCode & TypeScript
 teaser: Edit and test TypeScript applications in VSCode
 description: |-
   A basic track for editing a TypeScript application and running tests for it.
@@ -12,7 +12,7 @@ description: |-
   ```
   instruqt track create \
       --from templates/container \
-      --title "My VSCode / TypeScript track"
+      --title "My VSCode & TypeScript track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/ts.png
 tags: []
