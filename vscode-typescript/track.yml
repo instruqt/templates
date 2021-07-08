@@ -11,14 +11,14 @@ description: |-
   To create your own track from this template, run this command:
   ```
   instruqt track create \
-      --from templates/container \
+      --from templates/vscode-typescript \
       --title "My VSCode & TypeScript track"
   ```
 icon: https://cdn.instruqt.com/assets/templates/ts.png
 tags: []
 owner: templates
 developers:
-- borodean@gmail.com
+- vadym@instruqt.com
 private: true
 published: false
 challenges:
@@ -47,4 +47,4 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 600
-checksum: "810487026321808566"
+checksum: "9562327678337542251"
