@@ -2,21 +2,12 @@ slug: kubernetes-cluster
 id: 2lb3tdzl8dan
 type: track
 title: Multi node Kubernetes cluster
-teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node
-  template.
+teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
 description: |-
   Teach advanced features like pod affinity and anti-affinity with this
   multi-node template.
 
   This track is based on the k3s image we maintain.
-
-  ## Using this template
-  To create your own track from this template, run this command:
-  ```
-  instruqt track create \
-    --from templates/kubernetes-cluster \
-    --title "My Kubernetes cluster track"
-  ```
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags:
 - ""
@@ -70,4 +61,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 500
-checksum: "3154146811366027285"
+checksum: "8470156395376221004"

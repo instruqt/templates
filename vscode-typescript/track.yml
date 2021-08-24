@@ -6,19 +6,12 @@ teaser: Edit and test TypeScript applications in VSCode
 description: |-
   A basic track for editing a TypeScript application and running tests for it.
   The track checks are failing based on the test results.
-
-  ## Using this template
-  To create your own track from this template, run this command:
-  ```
-  instruqt track create \
-      --from templates/vscode-typescript \
-      --title "My VSCode & TypeScript track"
-  ```
 icon: https://cdn.instruqt.com/assets/templates/ts.png
 tags: []
 owner: templates
 developers:
 - vadym@instruqt.com
+- wietse@instruqt.com
 private: true
 published: false
 challenges:
@@ -47,4 +40,4 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 600
-checksum: "9562327678337542251"
+checksum: "11718140041935003569"

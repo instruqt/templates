@@ -7,14 +7,6 @@ description: |-
   # Virtual Machine with Docker
   To build and run container images, you need a virtual machine. This track
   show you how to do just that.
-
-  ## Using this template
-  To create your own track from this template, run this command:
-  ```
-  instruqt track create \
-      --from templates/docker-vm \
-      --title "My Docker track"
-  ```
 icon: https://cdn.instruqt.com/assets/templates/docker.png
 tags: []
 owner: templates
@@ -104,4 +96,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "543806530193944329"
+checksum: "7554061068330428746"

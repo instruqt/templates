@@ -2,20 +2,11 @@ slug: container
 id: wvwnokdc0kxo
 type: track
 title: Sandbox Container
-teaser: This is the most basic Instruqt track. Get started quickly with just one sandbox
-  container.
+teaser: This is the most basic Instruqt track. Get started quickly with just one sandbox container.
 description: |-
   # Sandbox container
 
   A basic Instruqt track. Get started quickly with just one sandbox container.
-
-  ## Using this template
-  To create your own track from this template, run this command:
-  ```
-  instruqt track create \
-      --from templates/container \
-      --title "My new track"
-  ```
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: templates
@@ -46,4 +37,4 @@ challenges:
     hostname: container
   difficulty: basic
   timelimit: 600
-checksum: "9747429241954389575"
+checksum: "5434088383656421031"

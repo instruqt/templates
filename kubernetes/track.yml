@@ -3,16 +3,7 @@ id: e9kwwum26pn3
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
-description: |-
-  Learn how to build Kubernetes-based tracks with this template.
-
-  ## Using this template
-  To create your own track from this template, run this command:
-  ```
-  instruqt track create \
-    --from templates/kubernetes \
-    --title "My Kubernetes track"
-  ```
+description: Learn how to build Kubernetes-based tracks with this template.
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags: []
 owner: templates
@@ -127,4 +118,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 600
-checksum: "9418630198834669245"
+checksum: "50434931874655577"
