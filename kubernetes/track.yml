@@ -3,7 +3,15 @@ id: e9kwwum26pn3
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
-description: Learn how to build Kubernetes-based tracks with this template.
+description: |-
+  Learn how to build Kubernetes-based tracks with this template.
+  
+  This track demonstrates how to:
+    - Provision a single node k3s VM
+    - Deploy a webserver (NGINX) on Kubernetes      
+    - Use a service tab to expose the web server through the Instruqt UI
+    - Use check and solve scripts
+    - Add scripts to a sandbox host
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags: []
 owner: templates
@@ -25,9 +33,9 @@ challenges:
 
       ## Objectives
       In this track, this is what you'll learn:
-      - Deploy a webserver (NGINX) on kubernetes
+      - Deploy a webserver (NGINX) on Kubernetes
       - Expose the deployment with a NodePort service
-      - View the exposed service with an embedded tab in Instruqt
+      - View the exposed service through a tab in Instruqt
       - Explore the Kubernetes dashboard on the sandbox VM
   assignment: |-
     Use the terminal to deploy nginx:

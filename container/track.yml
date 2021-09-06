@@ -7,6 +7,11 @@ description: |-
   # Sandbox container
 
   A basic Instruqt track. Get started quickly with just one sandbox container.
+
+  This track demonstrates how to:
+    - Use a container as a sandbox host
+    - Add a simple check script
+    - Use a terminal tab to let the user access the host    
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: templates
