@@ -1,17 +1,15 @@
 slug: container
 id: wvwnokdc0kxo
 type: track
-title: Sandbox Container
-teaser: This is the most basic Instruqt track. Get started quickly with just one sandbox container.
+title: Sandbox container
+teaser: Get started quickly with just one container-based sandbox host.
 description: |-
-  # Sandbox container
+  Get started quickly with just one container-based sandbox host.
 
-  A basic Instruqt track. Get started quickly with just one sandbox container.
-
-  This track demonstrates how to:
-    - Use a container as a sandbox host
+  **This track demonstrates how to:**
+    - Use an ubuntu container as a sandbox host
     - Add a simple check script
-    - Use a terminal tab to let the user access the host    
+    - Use a terminal tab to let the user access the host
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: templates
@@ -42,4 +40,4 @@ challenges:
     hostname: container
   difficulty: basic
   timelimit: 600
-checksum: "5434088383656421031"
+checksum: "11236006700610249745"
