@@ -1,18 +1,17 @@
 slug: kubernetes-cluster
 id: 2lb3tdzl8dan
 type: track
-title: Multi node Kubernetes cluster
-teaser: Teach advanced features like pod affinity and anti-affinity with this multi-node template.
+title: Multi-node Kubernetes cluster
+teaser: Setup a Kubernetes cluster on multiple sandbox hosts
 description: |-
-  Teach advanced features like pod affinity and anti-affinity with this
-  multi-node template.
+  Setup a Kubernetes cluster on multiple sandbox hosts. You need multiple
+  hosts if you want to teach advanced features like pod affinity and anti-affinity.
 
-    This track demonstrates how to:
-    - Provision a multi node k3s cluster
+  **This track demonstrates how to:**
+    - Provision a multi-node k3s cluster
     - Use a predefined Instruqt image with k3s
-    - Add a check to verify if the user typed a command
     - Pass parameters to a sandbox host using environment variables
-    - Use the track setup script to block loading the track until all services are up    
+    - Use the track setup script to block loading the track until all services are up
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags:
 - ""
@@ -66,4 +65,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 500
-checksum: "8470156395376221004"
+checksum: "5716303728163805029"
