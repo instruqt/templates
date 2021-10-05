@@ -12,6 +12,7 @@ owner: templates
 developers:
 - wietse@instruqt.com
 - mheimensen@xebia.com
+- vadym@instruqt.com
 private: false
 published: true
 challenges:
@@ -40,4 +41,5 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 600
-checksum: "18155515521103603682"
+checksum: "13671804065133756525"
+_: ""
