@@ -1,2 +1,0 @@
-#!/bin/sh
-aws iam get-policy --policy-arn arn:aws:iam::"$INSTRUQT_AWS_ACCOUNT_AWS_IAM_TRACK_ACCOUNT_ID":policy/Ec2Policy  || fail-message "Did you create a policy?"

@@ -1,8 +1,0 @@
-#!/bin/bash
-aws s3 ls |
-  while IFS= read -r line
-  do
-    s3info=($line)
-    echo ${s3info[2]}
-    aws s3 rb s3://${s3info[2]}
-  done
