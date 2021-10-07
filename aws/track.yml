@@ -1,33 +1,35 @@
 slug: aws
 id: suhbhzjy3lxo
 type: track
-title: Learn how to use AWS services.
+title: AWS Cloud Account
+teaser: Learn how to build tracks with an AWS account
 description: |-
-  Learn how to use tracks with preset AWS credentials.
+  Learn how to build tracks linking an AWS account to our cloud client Docker container.
 
   **This track demonstrates how to:**
-    - Expose AWS web-UI.
-    - AWS ec2 instance creation and deletion.
-    - AWS S3 example usage.
-    - AWS IAM policy example usage.
-icon: ""
+    - Link an AWS cloud account to your sandbox
+    - How to use the cloud client Docker container
+    - Use the AWS CLI and UI from our learn environment
+    - Customize IAM and SCP policies for the linked cloud account
+icon: https://cdn.instruqt.com/assets/templates/aws.png
 tags:
-- ""
+- Cloud Account
+- Docker
 owner: templates
 developers:
 - arslan@instruqt.com
 - matthisk@instruqt.com
 private: true
-published: false
+published: true
 challenges:
 - slug: aws-ec2-create
   id: stswhtvyegcl
   type: challenge
   title: AWS EC2 instance creation
-  teaser: Every cloud starts from VM ;)
+  teaser: Every cloud starts from VM
   notes:
   - type: text
-    contents: We're preparing everything, you're about to create an instance using AWS CLI.
+    contents: We're preparing the environment, you're about to create an EC2 instance using AWS CLI.
   assignment: |-
     Use the terminal to create ec2 instance:
 
@@ -123,5 +125,5 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "14813767742406018650"
+checksum: "6474362260576692789"
 _: ""
