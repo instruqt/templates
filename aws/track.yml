@@ -1,0 +1,126 @@
+slug: aws
+id: w6jvdo0dj6iq
+type: track
+title: Learn how to use AWS services.
+description: |-
+  Learn how to use tracks with preset AWS credentials.
+
+  **This track demonstrates how to:**
+    - Expose AWS web-UI.
+    - AWS ec2 instance creation and deletion.
+    - AWS S3 example usage.
+    - AWS IAM policy example usage.
+icon: ""
+tags:
+- ""
+owner: instruqt
+developers:
+- arslan@instruqt.com
+private: true
+published: false
+challenges:
+- slug: aws-ec2-create
+  id: td0pvxikg5k5
+  type: challenge
+  title: AWS EC2 instance creation
+  teaser: Every cloud starts from VM ;)
+  notes:
+  - type: text
+    contents: We're preparing everything, you're about to create an instance using AWS CLI.
+  assignment: |-
+    Use the terminal to create ec2 instance:
+
+    ```
+    aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano
+    ```
+
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: Cloud CLI
+    type: terminal
+    hostname: cloud-client
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+- slug: aws-ec2-delete
+  id: ayjom2fivuyl
+  type: challenge
+  title: AWS EC2 instance deletion
+  teaser: Use AWS console to manage your EC2 virtual machine.
+  notes:
+  - type: text
+    contents: You just created your EC2 virtual machine, let's try to remove it!
+  assignment: |-
+    Login to AWS console using credentials displayed in AWS Console tab, navigate to Services -> EC2 -> Instances,
+    and terminate instance you created.
+
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+- slug: aws-s3-bucket
+  id: 1y0owd3532j3
+  type: challenge
+  title: AWS S3 buckets usage
+  teaser: Create our own AWS S3 object storage.
+  assignment: |-
+    Use the terminal to create s3 bucket with the name of your usename:
+
+    ```
+    aws s3api create-bucket --bucket <username> --create-bucket-configuration LocationConstraint=us-east-2
+    ```
+
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: Cloud CLI
+    type: terminal
+    hostname: cloud-client
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+- slug: aws-iam-policy
+  id: rljyce35p8p2
+  type: challenge
+  title: AWS IAM policy usage
+  teaser: Create sample IAM policy allowinff access to ec2 service.
+  assignment: |-
+    Use the terminal to create IAM policy:
+
+    ```
+    aws iam create-policy --policy-name Ec2Policy --policy-document file://policy.json
+    ```
+
+    To verify that policy has been created successfully, replace <account_id> with
+    your **Account ID** from **AWS Console** tab and run folowing script:
+
+    ```
+    aws iam get-policy --policy-arn arn:aws:iam::<account_id>:policy/Ec2Policy
+    ```
+
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: Cloud CLI
+    type: terminal
+    hostname: cloud-client
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+checksum: "161821506241673414"
+_: ""

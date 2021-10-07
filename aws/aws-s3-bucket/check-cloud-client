@@ -1,0 +1,6 @@
+#!/bin/bash
+BUCKETS=$(aws s3 ls | wc -l)
+
+if [ "$BUCKETS" -eq "0" ]; then
+  fail-message "Did you create a bucket?"
+fi
