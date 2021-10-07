@@ -4,13 +4,13 @@ type: track
 title: AWS Cloud Account
 teaser: Learn how to build tracks with an AWS account
 description: |-
-  Learn how to build tracks linking an AWS account to our cloud client Docker container.
+  Learn how to use a sandboxed AWS account in your Instruqt track.
 
   **This track demonstrates how to:**
     - Link an AWS cloud account to your sandbox
     - How to use the cloud client Docker container
     - Use the AWS CLI and UI from our learn environment
-    - Customize IAM and SCP policies for the linked cloud account
+    - Limit usage of the cloud account using IAM and SCP policies
 icon: https://cdn.instruqt.com/assets/templates/aws.png
 tags:
 - Cloud Account
@@ -29,7 +29,10 @@ challenges:
   teaser: Every cloud starts from VM
   notes:
   - type: text
-    contents: We're preparing the environment, you're about to create an EC2 instance using AWS CLI.
+    contents: |-
+      You're about to create an EC2 instance using AWS CLI.
+
+      Please wait while we provision the AWS account.
   assignment: |-
     Use the terminal to create ec2 instance:
 
@@ -70,5 +73,5 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "10094092400565117608"
+checksum: "7090632838787987857"
 _: ""
