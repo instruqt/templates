@@ -9,32 +9,8 @@ aws_accounts:
 - name: aws-iam-track
   iam_policy: |-
     {
-      "Version": "2012-10-17",
-      "Statement": [
         {
-          "Sid": "Stmt1633353491204",
-          "Action": [
-            "iam:CreatePolicy",
-            "iam:GetPolicy"
-          ],
-          "Effect": "Allow",
-          "Resource": "*"
-        },
-        {
-          "Sid":"S3BucketPolicy",
-          "Effect":"Allow",
-          "Action":[
-             "s3:CreateBucket",
-             "s3:ListAllMyBuckets",
-             "s3:GetBucketLocation",
-             "s3:DeleteBucket"
-          ],
-          "Resource":[
-             "arn:aws:s3:::*"
-          ]
-        },
-        {
-            "Sid":"IGWCreationPolicy",
+            "Sid":"EC2CreationPolicy",
             "Effect": "Allow",
             "Action": "ec2:*",
             "Resource": "*"
