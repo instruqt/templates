@@ -1,4 +1,4 @@
-slug: aws
+slug: aws-cloud-account
 id: suhbhzjy3lxo
 type: track
 title: AWS Cloud Account
@@ -19,7 +19,7 @@ owner: templates
 developers:
 - arslan@instruqt.com
 - matthisk@instruqt.com
-private: true
+private: false
 published: true
 challenges:
 - slug: aws-ec2-create
@@ -70,5 +70,5 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "10583046918213082214"
+checksum: "10094092400565117608"
 _: ""
