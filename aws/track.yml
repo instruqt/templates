@@ -1,5 +1,5 @@
 slug: aws
-id: w6jvdo0dj6iq
+id: suhbhzjy3lxo
 type: track
 title: Learn how to use AWS services.
 description: |-
@@ -13,14 +13,15 @@ description: |-
 icon: ""
 tags:
 - ""
-owner: instruqt
+owner: templates
 developers:
 - arslan@instruqt.com
+- matthisk@instruqt.com
 private: true
 published: false
 challenges:
 - slug: aws-ec2-create
-  id: td0pvxikg5k5
+  id: stswhtvyegcl
   type: challenge
   title: AWS EC2 instance creation
   teaser: Every cloud starts from VM ;)
@@ -47,7 +48,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: aws-ec2-delete
-  id: ayjom2fivuyl
+  id: sxil4smudtyw
   type: challenge
   title: AWS EC2 instance deletion
   teaser: Use AWS console to manage your EC2 virtual machine.
@@ -68,7 +69,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: aws-s3-bucket
-  id: 1y0owd3532j3
+  id: wwbgh5pg8xf5
   type: challenge
   title: AWS S3 buckets usage
   teaser: Create our own AWS S3 object storage.
@@ -92,7 +93,7 @@ challenges:
   difficulty: basic
   timelimit: 600
 - slug: aws-iam-policy
-  id: rljyce35p8p2
+  id: kvuw77o1kscd
   type: challenge
   title: AWS IAM policy usage
   teaser: Create sample IAM policy allowinff access to ec2 service.
@@ -122,5 +123,5 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "161821506241673414"
+checksum: "14813767742406018650"
 _: ""
