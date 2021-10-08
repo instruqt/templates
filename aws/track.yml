@@ -15,6 +15,7 @@ icon: https://cdn.instruqt.com/assets/templates/aws.png
 tags:
 - Cloud Account
 - Docker
+- AWS
 owner: templates
 developers:
 - arslan@instruqt.com
@@ -25,22 +26,23 @@ challenges:
 - slug: aws-ec2-create
   id: stswhtvyegcl
   type: challenge
-  title: AWS EC2 instance creation
+  title: Create an AWS EC2 instance
   teaser: Every cloud starts from VM
   notes:
   - type: text
     contents: |-
-      You're about to create an EC2 instance using AWS CLI.
+    In this track, you will learn how to provision EC2 instances on AWS using the CLI.
 
-      Please wait while we provision the AWS account.
+    Please wait while we provision the AWS account.
   assignment: |-
-    Use the terminal to create ec2 instance:
+    We have provisioned a sandbox with the AWS CLI preconfigured for you.
+    You can use the terminal to the left to directly interact with the cli using aws.
 
-    ```
+    To create an EC2 instance, type the following command into the termnial:
+
     aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano
-    ```
 
-    To complete this challenge, press **Check**.
+    Once you're done, press the check button to continue.
   tabs:
   - title: Cloud CLI
     type: terminal
@@ -55,7 +57,7 @@ challenges:
 - slug: aws-ec2-delete
   id: sxil4smudtyw
   type: challenge
-  title: AWS EC2 instance deletion
+  title: Delete an AWS EC2 instance
   teaser: Use AWS console to manage your EC2 virtual machine.
   notes:
   - type: text
