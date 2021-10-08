@@ -36,13 +36,15 @@ challenges:
     Please wait while we provision the AWS account.
   assignment: |-
     We have provisioned a sandbox with the AWS CLI preconfigured for you.
-    You can use the terminal to the left to directly interact with the cli using aws.
+    You can use the terminal to the left to directly interact with the cli using `aws`.
 
     To create an EC2 instance, type the following command into the termnial:
 
+    ```
     aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano
+    ```
 
-    Once you're done, press the check button to continue.
+    Once you're done, press the **check** button to continue.
   tabs:
   - title: Cloud CLI
     type: terminal
