@@ -1,0 +1,40 @@
+version: "2"
+containers:
+- name: cloud-client
+  image: gcr.io/instruqt/cloud-client
+  shell: /bin/bash
+  ports:
+  - 80
+aws_accounts:
+- name: aws-iam-track
+  iam_policy: |-
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+            "Sid":"IGWCreationPolicy",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*"
+        }
+      ]
+    }
+  scp_policy: |-
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "RequireLessThanXLInstanceType",
+          "Effect": "Deny",
+          "Action": "ec2:RunInstances",
+          "Resource": "arn:aws:ec2:::instance/*",
+          "Condition": {
+            "StringNotEquals": {
+              "ec2:InstanceType": [
+                "t2.nano"
+              ]
+            }
+          }
+        }
+      ]
+    }
