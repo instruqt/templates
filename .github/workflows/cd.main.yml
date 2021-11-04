@@ -9,6 +9,7 @@ on:
 # TRACKS_WORKDIR: /
 jobs:
   scope:
+    id: scope
     runs-on: ubuntu-latest
     steps:
       - name: Finds scope
@@ -27,7 +28,7 @@ jobs:
           # create slugs array
           slugs=()
           # Loop over modified files
-          for modified_file_path in ${{ needs.scope.outputs.modified }}; do
+          for modified_file_path in ${{ needs.scope.outputs.added_modified }}; do
               # replaces '/' with whitespace
               slug=(${modified_file_path//// })
               slugs+=($slug)
