@@ -1,0 +1,35 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+env:
+  ENV: Production
+  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
+  WORKDIR: /
+inputs:
+  variables:
+    organization: instruqt-testing
+jobs:
+  scope:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Finds scope
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: json
+  push-tracks:
+    needs: scope
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pushing updated and/or new tracks
+        run: |
+          readarray -t modified <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.modified }}')"
+          for removed_file in ${modified[@]}; do
+            cd $WORKDIR/modified && instruqt track push
+          done
+  delete-tracks:
+    needs: scope
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deleting removed tracks
