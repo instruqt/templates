@@ -22,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download CLI
-        uses: docker-practice/actions-setup-docker@1.0.8
         run: |
           curl https://github.com/instruqt/cli/releases/download/1909-0b7cb45/instruqt-darwin-1909-0b7cb45.zip --output cli.zip
       - name: Unzip CLI
