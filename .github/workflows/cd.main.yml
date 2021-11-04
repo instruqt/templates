@@ -3,10 +3,10 @@ on:
   pull_request:
     branches:
       - main
-env:
-  # ENV: Production
-  # INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
-  # TRACKS_WORKDIR: /
+# env:
+# ENV: Production
+# INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
+# TRACKS_WORKDIR: /
 jobs:
   scope:
     runs-on: ubuntu-latest
