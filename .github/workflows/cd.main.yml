@@ -47,10 +47,10 @@ jobs:
   # Check whether the track folder still eixsts
   # If yes, it's not entirely deleted, dont do anything
   # If no, the whole track has been deleted, run `instruqt track delete orgSlug/trackSlug`
-  delete-tracks:
-    needs: scope
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deleting removed tracks
-        run: |
-          echo "We ran the thing!"
+  # delete-tracks:
+  #   needs: scope
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Deleting removed tracks
+  #       run: |
+  #         echo "We ran the thing!"
