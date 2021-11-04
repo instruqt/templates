@@ -58,8 +58,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deleting removed tracks
-        RUN: |
-          readarray -t deleted <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.deleted }}')"
-          for removed_file in ${deleted[@]}; do
-            cd $TRACKS_WORKDIR/removed_file && instruqt track delete
-          done
+        run: |
+          echo "We ran the thing!"
