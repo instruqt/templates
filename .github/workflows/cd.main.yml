@@ -20,6 +20,7 @@ jobs:
   # run `instruqt track push`
   push-tracks:
     runs-on: ubuntu-latest
+    container: instruqt-cli
     steps:
       - name: Checkout
         uses: actions/checkout@v2
