@@ -8,20 +8,22 @@ on:
 # INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
 # TRACKS_WORKDIR: /
 jobs:
-  scope:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Finds scope
-        id: scope
-        uses: jitterbit/get-changed-files@v1
+  # scope:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Finds scope
+  #       id: scope
+  #       uses: jitterbit/get-changed-files@v1
   # Goal: Find tracks that have been changed and push changes
   # Get scope with modified files, filter to unique trackSlug
   # cd to $TRACK_WORKDIR/trackSlug for all unique edited tracks
   # run `instruqt track push`
   push-tracks:
-    needs: scope
     runs-on: ubuntu-latest
     steps:
+      - name: Finds scope
+        id: scope
+        uses: jitterbit/get-changed-files@v1
       - name: Finding modified tracks
         run: |
           #!/bin/bash
