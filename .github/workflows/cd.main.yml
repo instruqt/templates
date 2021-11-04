@@ -7,10 +7,6 @@ env:
   ENV: Production
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
   TRACKS_WORKDIR: /
-inputs:
-  variables:
-    organization: instruqt-testing
-    directories:
 jobs:
   scope:
     runs-on: ubuntu-latest
