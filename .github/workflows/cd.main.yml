@@ -24,6 +24,7 @@ jobs:
       - name: Install CLI
         run: |
           curl https://github.com/instruqt/cli/releases/download/1909-0b7cb45/instruqt-darwin-1909-0b7cb45.zip --output cli.zip
+          ls
           unzip cli.zip
           mv ./cli/instruqt /usr/bin
           rm cli.zip
