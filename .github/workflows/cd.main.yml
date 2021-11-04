@@ -36,7 +36,7 @@ jobs:
           # filter unique slugs as unique_slugs
           unique_slugs=($(echo "${slugs[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
           # set $UNIQUE_MODIFIED_TRACKS env var so we can use it in the next step
-          echo "UNIQUE_MODIFIED_TRACKS=unique_slugs" >> $GITHUB_ENV
+          echo "UNIQUE_MODIFIED_TRACKS=$unique_slugs" >> $GITHUB_ENV
 
       - name: Pushing updated and/or new tracks
         run: |
