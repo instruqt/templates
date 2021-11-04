@@ -30,7 +30,9 @@ jobs:
           # create slugs array
           slugs=()
           # Loop over modified files
-          for modified_file_path in ${{ steps.scope.outputs.added_modified }}; do
+          read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
+          for modified_file_path in $list; do
+              # output to array
               # replaces '/' with whitespace
               slug=(${modified_file_path//// })
               slugs+=($slug)
