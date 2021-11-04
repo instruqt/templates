@@ -28,11 +28,10 @@ jobs:
       - name: Unzip CLI
         uses: montudor/action-zip@v1
         with:
-          args: unzip -qq cli.zip -d ./
+          args: unzip -qq cli.zip -d ./cli
       - name: Install CLI
         run: |
-          docker pull instruqt/cli
-          docker run instruqt/cli
+          mv ./cli/instruqt /usr/bin
       - name: Checkout
         uses: actions/checkout@v2
       - name: Finds scope
