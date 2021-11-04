@@ -23,18 +23,10 @@ jobs:
     steps:
       - name: Install CLI
         run: |
-          curl https://github.com/instruqt/cli/releases/download/1909-0b7cb45/instruqt-darwin-1909-0b7cb45.zip --output cli.zip
-          ls
+          curl https://github.com/instruqt/cli/releases/download/1909-0b7cb45/instruqt-darwin-1909-0b7cb45.zip -L -o cli.zip
           unzip cli.zip
-          mv ./cli/instruqt /usr/bin
+          mv ./instruqt /usr/local/bin
           rm cli.zip
-      # - name: Unzip CLI
-      #   uses: montudor/action-zip@v1
-      #   with:
-      #     args: unzip -qq ./cli.zip -d ./cli
-      # - name: Install CLI
-      #   run: |
-      #     mv ./cli/instruqt /usr/bin
       - name: Checkout
         uses: actions/checkout@v2
       - name: Finds scope
