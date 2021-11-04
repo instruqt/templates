@@ -29,9 +29,10 @@ jobs:
           #!/bin/bash
           # create slugs array
           slugs=()
-          # Loop over modified files
+          # read output into an array
           read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
-          for modified_file_path in $list; do
+          # Loop over modified files
+          for modified_file_path in "${list[@]}"; do
               # output to array
               # replaces '/' with whitespace
               slug=(${modified_file_path//// })
@@ -44,6 +45,12 @@ jobs:
       - name: Pushing updated and/or new tracks
         run: |
           echo "${{ env.UNIQUE_MODIFIED_TRACKS }}"
+          read -r -a slugs <<< "${{ env.UNIQUE_MODIFIED_TRACKS }}"
+          # Loop over modified files
+          for slug in "${slugs[@]}"; do
+              cd $slug
+              instruqt track push
+          done
   # Goal: Find tracks that have been deleted entirely
   # Get scope with deleted files.
   # Check whether the track folder still eixsts
