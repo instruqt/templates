@@ -21,8 +21,9 @@ jobs:
   push-tracks:
     runs-on: ubuntu-latest
     steps:
-      - name: CLI
+      - name: Setup Docker
         uses: docker-practice/actions-setup-docker@1.0.8
+      - name: Install CLI
         run: |
           docker pull instruqt/cli
           docker run instruqt/cli
