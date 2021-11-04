@@ -1,15 +1,16 @@
 name: CD
 on:
-  push:
+  pull_request:
     branches:
       - main
 env:
   ENV: Production
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
-  WORKDIR: /
+  TRACKS_WORKDIR: /
 inputs:
   variables:
     organization: instruqt-testing
+    directories:
 jobs:
   scope:
     runs-on: ubuntu-latest
@@ -18,18 +19,47 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         with:
           format: json
+  # Goal: Find tracks that have been changed and push changes
+  # Get scope with modified files, filter to unique trackSlug
+  # cd to $TRACK_WORKDIR/trackSlug for all unique edited tracks
+  # run `instruqt track push`
   push-tracks:
     needs: scope
     runs-on: ubuntu-latest
     steps:
+      - name: Finding modified tracks
+        run: |
+          # Read list of modified files from jobs.scope.outputs
+          readarray -t modified <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.modified }}')"
+          # create slugs array
+          slugs=()
+          # Loop over modified files
+          for modified_file_path in ${modified[@]}; do
+            # Split modified_file_path on '/' as split_path
+            IFS='/' read -ra split_path <<< modified_file_path
+            # Add first index to slugs list, which _should_ be the slug
+            slugs+=(split_path[0])
+          done
+          # filter unique slugs as unique_slugs
+          unique_slugs=($(echo "${slugs[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
+          # set $UNIQUE_MODIFIED_TRACKS env var so we can use it in the next step
+          echo "UNIQUE_MODIFIED_TRACKS=unique_slugs" >> $GITHUB_ENV
+
       - name: Pushing updated and/or new tracks
         run: |
-          readarray -t modified <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.modified }}')"
-          for removed_file in ${modified[@]}; do
-            cd $WORKDIR/modified && instruqt track push
-          done
+          echo "${{ env.UNIQUE_MODIFIED_TRACKS }}"
+  # Goal: Find tracks that have been deleted entirely
+  # Get scope with deleted files.
+  # Check whether the track folder still eixsts
+  # If yes, it's not entirely deleted, dont do anything
+  # If no, the whole track has been deleted, run `instruqt track delete orgSlug/trackSlug`
   delete-tracks:
     needs: scope
     runs-on: ubuntu-latest
     steps:
       - name: Deleting removed tracks
+        RUN: |
+          readarray -t deleted <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.deleted }}')"
+          for removed_file in ${deleted[@]}; do
+            cd $TRACKS_WORKDIR/removed_file && instruqt track delete
+          done
