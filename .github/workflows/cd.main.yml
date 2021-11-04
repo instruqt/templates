@@ -26,10 +26,8 @@ jobs:
           #!/bin/bash
           # create slugs array
           slugs=()
-
-          list=("slug1/file1" "slug1/file2" "slug2/file1" "slug3/file1")
           # Loop over modified files
-          for modified_file_path in ${{ jobs.scope.outputs.modified }}; do
+          for modified_file_path in ${{ steps.scope.outputs.modified }}; do
               # replaces '/' with whitespace
               slug=(${modified_file_path//// })
               slugs+=($slug)
