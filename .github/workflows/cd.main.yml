@@ -20,8 +20,12 @@ jobs:
   # run `instruqt track push`
   push-tracks:
     runs-on: ubuntu-latest
-    container: instruqt/cli
     steps:
+      - name: CLI
+        uses: docker-practice/actions-setup-docker@1.0.8
+        run: |
+          docker pull instruqt/cli
+          docker run instruqt/cli
       - name: Checkout
         uses: actions/checkout@v2
       - name: Finds scope
