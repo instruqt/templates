@@ -31,7 +31,11 @@ jobs:
             # Split modified_file_path on '/' as split_path
             IFS='/' read -ra split_path <<< modified_file_path
             # Add first index to slugs list, which _should_ be the slug
-            slugs+=(split_path[0])
+            echo $split_path[0]
+            echo $split_path
+            echo split_path
+            echo split_path[0]
+            slugs+=($split_path[0])
           done
           # filter unique slugs as unique_slugs
           unique_slugs=($(echo "${slugs[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '))
