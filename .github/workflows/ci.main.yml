@@ -1,0 +1,60 @@
+name: CD
+on:
+  pull_request:
+    branches:
+      - main
+env:
+  ORGANIZATION_SLUG: templates
+  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
+jobs:
+  test:
+    name: Testing changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install CLI
+        run: |
+          curl https://github.com/instruqt/cli/releases/download/1909-0b7cb45/instruqt-linux-1909-0b7cb45.zip -L -o cli.zip
+          unzip cli.zip
+          mv ./instruqt /usr/local/bin
+          rm cli.zip
+          instruqt update
+          instruqt config set organization ${{ env.ORGANIZATION_SLUG }}
+      - name: Checkout template repository
+        uses: actions/checkout@v2
+      - name: Get changed files
+        id: scope
+        uses: jitterbit/get-changed-files@v1
+      - name: Finding modified tracks
+        run: |
+          #!/bin/bash
+          # create slugs array
+          slugs=()
+          # Read output into an array
+          read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
+          # Loop over modified files
+          for modified_file_path in ${list[@]}; do
+              # Filter all dot directories, eg. .github
+              if [[ $modified_file_path =~ ^\. ]]; then
+                  echo "Skipping $modified_file_path, not a track."
+              else
+                  # Strips everything including and after first '/'
+                  slug=(${modified_file_path//// })
+                  # Check if slug is already in scope
+                  if [[ $slugs =~ (^|[[:space:]])$slug($|[[:space:]]) ]]; then
+                      echo "$slug already exists, skipping."
+                  else
+                      slugs+=($slug)
+                  fi
+              fi
+          done
+          echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
+      - name: Pushing updated and/or new tracks
+        run: |
+          read -r -a slugs <<< "${{ env.UNIQUE_MODIFIED_TRACKS }}"
+          # Loop over modified files
+          for slug in "${slugs[@]}"; do
+              cd $slug
+              instruqt track validate
+              instruqt track test
+              cd ..
+          done
