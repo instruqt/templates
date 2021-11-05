@@ -1,6 +1,6 @@
 name: CD
 on:
-  push:
+  pull_request:
     branches:
       - main
 env:
@@ -56,6 +56,6 @@ jobs:
           for slug in "${slugs[@]}"; do
               cd $slug
               instruqt config list
-              instruqt --env ${{ env.ENV }} track push --force
+              instruqt track push --force
               cd ..
           done
