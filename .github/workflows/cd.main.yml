@@ -37,18 +37,24 @@ jobs:
           #!/bin/bash
           # create slugs array
           slugs=()
-          # read output into an array
+          # Read output into an array
           read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
           # Loop over modified files
           for modified_file_path in ${list[@]}; do
-              # output to array
-              # replaces '/' with whitespace
-              slug=(${modified_file_path//// })
-              slugs+=($slug)
+              if [[ $modified_file_path =~ ^\. ]]; then
+                  echo "Skipping $modified_file_path, not a track."
+              else
+                  # Strips everything after first '/'
+                  slug=(${modified_file_path//// })
+                  # Check if slug is already in scope
+                  if [[ $slugs =~ (^|[[:space:]])$slug($|[[:space:]]) ]]; then
+                      echo "$slug already exists, skipping."
+                  else
+                      slugs+=($slug)
+                  fi
+              fi
           done
-          # TODO: filter unique slugs as unique_slugs
           echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
-
       - name: Pushing updated and/or new tracks
         run: |
           echo "${{ env.UNIQUE_MODIFIED_TRACKS }}"
@@ -56,7 +62,7 @@ jobs:
           # Loop over modified files
           for slug in "${slugs[@]}"; do
               cd $slug
-              instruqt --env dev track push
+              instruqt --env $ENV track push
               cd ..
           done
   # Goal: Find tracks that have been deleted entirely
