@@ -48,7 +48,7 @@ jobs:
               fi
           done
           echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
-      - name: Pushing updated and/or new tracks
+      - name: Validating and testing modified tracks
         run: |
           read -r -a slugs <<< "${{ env.UNIQUE_MODIFIED_TRACKS }}"
           # Loop over modified files
