@@ -1,13 +1,14 @@
 name: CD
 on:
-  pull_request:
+  push:
     branches:
       - main
 env:
   ORGANIZATION_SLUG: templates
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
 jobs:
-  push-tracks:
+  deploy-changes:
+    name: Deploy changes
     runs-on: ubuntu-latest
     steps:
       - name: Install CLI
@@ -49,7 +50,6 @@ jobs:
           echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
       - name: Pushing updated and/or new tracks
         run: |
-          echo "${{ env.UNIQUE_MODIFIED_TRACKS }}"
           read -r -a slugs <<< "${{ env.UNIQUE_MODIFIED_TRACKS }}"
           # Loop over modified files
           for slug in "${slugs[@]}"; do
