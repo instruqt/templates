@@ -1,12 +1,12 @@
 name: CD
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - dev
 env:
-  ENV: prod
+  ENV: dev
   ORGANIZATION_SLUG: templates
-  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN_PROD }}
+  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN_DEV }}
 jobs:
   push-tracks:
     runs-on: ubuntu-latest
