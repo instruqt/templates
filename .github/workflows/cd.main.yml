@@ -40,15 +40,14 @@ jobs:
           # read output into an array
           read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
           # Loop over modified files
-          for modified_file_path in "${list[@]}"; do
+          for modified_file_path in ${list[@]}; do
               # output to array
               # replaces '/' with whitespace
               slug=(${modified_file_path//// })
               slugs+=($slug)
           done
-
           # TODO: filter unique slugs as unique_slugs
-          echo "UNIQUE_MODIFIED_TRACKS=$slugs" >> $GITHUB_ENV
+          echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
 
       - name: Pushing updated and/or new tracks
         run: |
@@ -58,6 +57,7 @@ jobs:
           for slug in "${slugs[@]}"; do
               cd $slug
               instruqt track push
+              cd ..
           done
   # Goal: Find tracks that have been deleted entirely
   # Get scope with deleted files.
