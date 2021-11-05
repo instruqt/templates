@@ -62,7 +62,7 @@ jobs:
           # Loop over modified files
           for slug in "${slugs[@]}"; do
               cd $slug
-              instruqt --env ${{ env.ENV }} track push
+              instruqt --env ${{ env.ENV }} track push --force
               cd ..
           done
   # Goal: Find tracks that have been deleted entirely
