@@ -4,9 +4,8 @@ on:
     branches:
       - main
 env:
-  ENV: prod
   ORGANIZATION_SLUG: templates
-  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN_PROD }}
+  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
 jobs:
   push-tracks:
     runs-on: ubuntu-latest
@@ -19,9 +18,9 @@ jobs:
           rm cli.zip
           instruqt update
           instruqt config set organization ${{ env.ORGANIZATION_SLUG }}
-      - name: Checkout
+      - name: Checkout template repository
         uses: actions/checkout@v2
-      - name: Finds scope
+      - name: Get changed files
         id: scope
         uses: jitterbit/get-changed-files@v1
       - name: Finding modified tracks
@@ -55,7 +54,6 @@ jobs:
           # Loop over modified files
           for slug in "${slugs[@]}"; do
               cd $slug
-              instruqt config list
               instruqt track push --force
               cd ..
           done
