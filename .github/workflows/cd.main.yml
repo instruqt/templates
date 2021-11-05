@@ -5,8 +5,8 @@ on:
       - main
 env:
   ENV: dev
+  ORGANIZATION_SLUG: templates
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN_DEV }}
-  TRACKS_WORKDIR: /
 jobs:
   # scope:
   #   runs-on: ubuntu-latest
@@ -27,6 +27,7 @@ jobs:
           unzip cli.zip
           mv ./instruqt /usr/local/bin
           rm cli.zip
+          instruqt config set organization ${{ env.ORGANIZATION_SLUG }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Finds scope
