@@ -8,16 +8,6 @@ env:
   ORGANIZATION_SLUG: templates
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN_DEV }}
 jobs:
-  # scope:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Finds scope
-  #       id: scope
-  #       uses: jitterbit/get-changed-files@v1
-  # Goal: Find tracks that have been changed and push changes
-  # Get scope with modified files, filter to unique trackSlug
-  # cd to $TRACK_WORKDIR/trackSlug for all unique edited tracks
-  # run `instruqt track push`
   push-tracks:
     runs-on: ubuntu-latest
     steps:
@@ -27,6 +17,7 @@ jobs:
           unzip cli.zip
           mv ./instruqt /usr/local/bin
           rm cli.zip
+          instruqt update
           instruqt config set organization ${{ env.ORGANIZATION_SLUG }}
       - name: Checkout
         uses: actions/checkout@v2
@@ -42,10 +33,11 @@ jobs:
           read -r -a list <<< "${{ steps.scope.outputs.added_modified }}"
           # Loop over modified files
           for modified_file_path in ${list[@]}; do
+              # Filter all dot directories, eg. .github
               if [[ $modified_file_path =~ ^\. ]]; then
                   echo "Skipping $modified_file_path, not a track."
               else
-                  # Strips everything after first '/'
+                  # Strips everything including and after first '/'
                   slug=(${modified_file_path//// })
                   # Check if slug is already in scope
                   if [[ $slugs =~ (^|[[:space:]])$slug($|[[:space:]]) ]]; then
@@ -67,15 +59,3 @@ jobs:
               instruqt --env ${{ env.ENV }} track push --force
               cd ..
           done
-  # Goal: Find tracks that have been deleted entirely
-  # Get scope with deleted files.
-  # Check whether the track folder still eixsts
-  # If yes, it's not entirely deleted, dont do anything
-  # If no, the whole track has been deleted, run `instruqt track delete orgSlug/trackSlug`
-  # delete-tracks:
-  #   needs: scope
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Deleting removed tracks
-  #       run: |
-  #         echo "We ran the thing!"
