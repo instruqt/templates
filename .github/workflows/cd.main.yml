@@ -10,7 +10,6 @@ jobs:
   deploy-changes:
     name: Deploy changes
     runs-on: ubuntu-latest
-    container: instruqt/cli
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
