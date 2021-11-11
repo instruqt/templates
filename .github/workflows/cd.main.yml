@@ -6,6 +6,9 @@ on:
 env:
   ORGANIZATION_SLUG: templates
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
+runs:
+  using: "docker"
+  image: "instruqt/cli"
 jobs:
   deploy-changes:
     name: Deploy changes
