@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Finding modified tracks
+      - name: Scoping tracks
         run: |
           #!/bin/bash
 
@@ -35,10 +35,12 @@ jobs:
                   slugs+=($slug)
               fi
           done
-          echo "UNIQUE_MODIFIED_TRACKS=${slugs[@]}" >> $GITHUB_ENV
+          echo "TRACK_SLUGS=${slugs[@]}" >> $GITHUB_ENV
       - name: Pushing updated and/or new tracks
         run: |
-          read -r -a slugs <<< "${{ env.UNIQUE_MODIFIED_TRACKS }}"
+          #!/bin/bash
+
+          read -r -a slugs <<< "${{ env.TRACK_SLUGS }}"
           # Loop over modified files
           for slug in "${slugs[@]}"; do
               cd $slug
