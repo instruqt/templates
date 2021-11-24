@@ -45,6 +45,7 @@ jobs:
           # Push every track
           for slug in ${slugs[@]}; do
               cd $slug
+              echo $slug
               docker run -e INSTRUQT_TOKEN=${{ env.INSTRUQT_TOKEN }} --workdir="/track" --mount type=bind,source="$(pwd)",target=/track instruqt/cli track push
               cd ..
           done
