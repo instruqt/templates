@@ -41,11 +41,10 @@ jobs:
           #!/bin/bash
 
           read -r -a slugs <<< "${{ env.TRACK_SLUGS }}"
-          # Loop over modified files
-          for slug in "${slugs[@]}"; do
+
+          # Push every track
+          for slug in ${slugs[@]}; do
               cd $slug
-              docker run \
-              -e INSTRUQT_TOKEN=$$INSTRUQT_TOKEN \
-              instruqt/cli track push
+              docker run -e INSTRUQT_TOKEN=${{ env.INSTRUQT_TOKEN }} --workdir="/track" --mount type=bind,source="$(pwd)",target=/track instruqt/cli track push
               cd ..
           done
