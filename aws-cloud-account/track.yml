@@ -26,7 +26,7 @@ challenges:
 - slug: aws-ec2-create
   id: 8mbkksmjakif
   type: challenge
-  title: AWS EC2 instance creation
+  title: Create an AWS EC2 instance
   teaser: Every cloud starts from VM
   notes:
   - type: text
