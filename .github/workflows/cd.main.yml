@@ -13,39 +13,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Scoping tracks
+      - name: Pushing tracks
         run: |
           #!/bin/bash
 
-          # create slugs array
-          slugs=()
-          # Read output into an array
-          shopt -s nullglob
-          dirs=(*/)
-          shopt -u nullglob
-
-          for track in ${dirs[@]}; do
-              # Filter all dot directories, eg. .github
-              if [[ $track =~ ^\. ]]; then
-                  echo "Skipping $track, not a track."
-              else
-                  # Strips everything including and after first '/'
-                  slug=(${track//// })
-                  # Adds slug to list of slugs
-                  slugs+=($slug)
-              fi
-          done
-          echo "TRACK_SLUGS=${slugs[@]}" >> $GITHUB_ENV
-      - name: Pushing updated and/or new tracks
-        run: |
-          #!/bin/bash
-
-          read -r -a slugs <<< "${{ env.TRACK_SLUGS }}"
-
-          # Push every track
-          for slug in ${slugs[@]}; do
-              cd $slug
-              echo $slug
+          for track in */; do
+              pushd $track
               docker run -e INSTRUQT_TOKEN=${{ env.INSTRUQT_TOKEN }} --workdir="/track" --mount type=bind,source="$(pwd)",target=/track instruqt/cli track push
-              cd ..
+              popd
           done
