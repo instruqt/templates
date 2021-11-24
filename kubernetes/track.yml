@@ -56,7 +56,8 @@ challenges:
   teaser: Use a NodePort to expose the NGINX webserver
   notes:
   - type: text
-    contents: You've just deployed NGINX. To view the deployment, create a NodePort service for it.
+    contents: You've just deployed NGINX. To view the deployment, create a NodePort
+      service for it.
   assignment: |-
     Use the terminal to add a NodePort service:
 
@@ -124,4 +125,4 @@ challenges:
     port: 8001
   difficulty: basic
   timelimit: 600
-checksum: "3462070190153333817"
+checksum: "2667691264929578243"

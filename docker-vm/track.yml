@@ -19,8 +19,8 @@ tags: []
 owner: templates
 developers:
 - victor@instruqt.com
-- matthisk@instruqt.com
 - wietse@instruqt.com
+- matthisk@instruqt.com
 private: false
 published: true
 challenges:
@@ -103,4 +103,4 @@ challenges:
     port: 80
   difficulty: basic
   timelimit: 600
-checksum: "11983154899555926480"
+checksum: "1451108754495598935"

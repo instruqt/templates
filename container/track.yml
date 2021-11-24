@@ -15,7 +15,7 @@ tags: []
 owner: templates
 developers:
 - victor@instruqt.com
-- matthisk@instruqt.com
+- matthiskheimensen@gmail.com
 - wietse@instruqt.com
 private: false
 published: true
@@ -40,4 +40,4 @@ challenges:
     hostname: container
   difficulty: basic
   timelimit: 600
-checksum: "11236006700610249745"
+checksum: "4011864822941036508"
