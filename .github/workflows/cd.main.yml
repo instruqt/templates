@@ -4,17 +4,15 @@ on:
     branches:
       - main
 env:
-  ENV: Production
-  INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
-  TRACKS_WORKDIR: /
+  # ENV: Production
+  # INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
+  # TRACKS_WORKDIR: /
 jobs:
   scope:
     runs-on: ubuntu-latest
     steps:
       - name: Finds scope
         uses: jitterbit/get-changed-files@v1
-        with:
-          format: json
   # Goal: Find tracks that have been changed and push changes
   # Get scope with modified files, filter to unique trackSlug
   # cd to $TRACK_WORKDIR/trackSlug for all unique edited tracks
@@ -26,11 +24,10 @@ jobs:
       - name: Finding modified tracks
         run: |
           # Read list of modified files from jobs.scope.outputs
-          readarray -t modified <<<"$(jq -r '.[]' <<<'${{ jobs.scope.outputs.modified }}')"
           # create slugs array
           slugs=()
           # Loop over modified files
-          for modified_file_path in ${modified[@]}; do
+            for modified_file_path in ${{ steps.files.outputs.all }}; do
             # Split modified_file_path on '/' as split_path
             IFS='/' read -ra split_path <<< modified_file_path
             # Add first index to slugs list, which _should_ be the slug
