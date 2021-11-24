@@ -4,7 +4,7 @@ type: track
 title: Sandbox virtual machine
 teaser: Use a virtual machine (VM) as a sandbox host
 description: |-
-  Testing! Again :-) boom
+  Testing changes :-)
   A sandbox host can be a container or a virtual machine (VM).
 
   One reason to choose a VM over a container is if you need access to
@@ -104,4 +104,4 @@ challenges:
         port: 80
     difficulty: basic
     timelimit: 600
-checksum: "11983154899555926480"
+checksum: "13684615881674699692"
