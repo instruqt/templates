@@ -1,4 +1,5 @@
 slug: aws-cloud-account
+id: 0ytrmq5i2xlu
 type: track
 title: AWS Cloud Account
 teaser: Learn how to build tracks with an AWS account
@@ -12,61 +13,65 @@ description: |-
     - Limit usage of the cloud account using IAM and SCP policies
 icon: https://cdn.instruqt.com/assets/templates/aws.png
 tags:
-  - Cloud Account
-  - Docker
+- Cloud Account
+- Docker
 owner: templates
 developers:
-  - arslan@instruqt.com
-  - matthisk@instruqt.com
-private: true
-published: false
+- arslan@instruqt.com
+- matthisk@instruqt.com
+- bruno@instruqt.com
+private: false
+published: true
 challenges:
-  - slug: aws-ec2-create
-    type: challenge
-    title: AWS EC2 instance creation
-    teaser: Every cloud starts from VM
-    notes:
-      - type: text
-        contents: |-
-          You're about to create an EC2 instance using AWS CLI.
+- slug: aws-ec2-create
+  id: 8mbkksmjakif
+  type: challenge
+  title: AWS EC2 instance creation
+  teaser: Every cloud starts from VM
+  notes:
+  - type: text
+    contents: |-
+      You're about to create an EC2 instance using AWS CLI.
 
-          Please wait while we provision the AWS account.
-    assignment: |-
-      Use the terminal to create ec2 instance:
+      Please wait while we provision the AWS account.
+  assignment: |-
+    Use the terminal to create ec2 instance:
 
-      ```
-      aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano
-      ```
+    ```
+    aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano
+    ```
 
-      To complete this challenge, press **Check**.
-    tabs:
-      - title: Cloud CLI
-        type: terminal
-        hostname: cloud-client
-      - title: AWS Console
-        type: service
-        hostname: cloud-client
-        path: /
-        port: 80
-    difficulty: basic
-    timelimit: 600
-  - slug: aws-ec2-delete
-    type: challenge
-    title: AWS EC2 instance deletion
-    teaser: Use AWS console to manage your EC2 virtual machine.
-    notes:
-      - type: text
-        contents: You just created your EC2 virtual machine, let's try to remove it!
-    assignment: |-
-      Login to AWS console using credentials displayed in AWS Console tab, navigate to Services -> EC2 -> Instances,
-      and terminate instance you created.
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: Cloud CLI
+    type: terminal
+    hostname: cloud-client
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+- slug: aws-ec2-delete
+  id: tlod6cx1ytfr
+  type: challenge
+  title: AWS EC2 instance deletion
+  teaser: Use AWS console to manage your EC2 virtual machine.
+  notes:
+  - type: text
+    contents: You just created your EC2 virtual machine, let's try to remove it!
+  assignment: |-
+    Login to AWS console using credentials displayed in AWS Console tab, navigate to Services -> EC2 -> Instances,
+    and terminate instance you created.
 
-      To complete this challenge, press **Check**.
-    tabs:
-      - title: AWS Console
-        type: service
-        hostname: cloud-client
-        path: /
-        port: 80
-    difficulty: basic
-    timelimit: 600
+    To complete this challenge, press **Check**.
+  tabs:
+  - title: AWS Console
+    type: service
+    hostname: cloud-client
+    path: /
+    port: 80
+  difficulty: basic
+  timelimit: 600
+checksum: "561548561309939418"
