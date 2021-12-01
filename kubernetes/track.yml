@@ -1,5 +1,5 @@
 slug: kubernetes
-id: e9kwwum26pn3
+id: 3dy89r39vlpj
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
@@ -15,114 +15,7 @@ tags: []
 owner: templates
 developers:
 - wietse@instruqt.com
+- bruno@instruqt.com
 private: false
 published: true
-challenges:
-- slug: 01-deploying-nginx
-  id: cm3mp385y082
-  type: challenge
-  title: Deploy NGINX
-  teaser: Everything starts with a webserver
-  notes:
-  - type: text
-    contents: |-
-      This track uses a single node Kubernetes cluster on a sandbox virtual machine.
-      Please wait while we boot the VM for you and start Kubernetes.
-
-      ## Objectives
-      In this track, this is what you'll learn:
-      - Deploy a webserver (NGINX) on Kubernetes
-      - Expose the deployment with a NodePort service
-      - View the exposed service through a tab in Instruqt
-      - Explore the Kubernetes dashboard on the sandbox VM
-  assignment: |-
-    Use the terminal to deploy nginx:
-
-    ```
-    kubectl create deployment nginx --image nginx
-    ```
-
-    To complete this challenge, press **Check**.
-  tabs:
-  - title: Shell
-    type: terminal
-    hostname: kubernetes-vm
-  difficulty: basic
-  timelimit: 600
-- slug: 02-exposing-nginx
-  id: 7oqpyx3avcwm
-  type: challenge
-  title: Expose the NGINX service
-  teaser: Use a NodePort to expose the NGINX webserver
-  notes:
-  - type: text
-    contents: You've just deployed NGINX. To view the deployment, create a NodePort
-      service for it.
-  assignment: |-
-    Use the terminal to add a NodePort service:
-
-    ```
-    kubectl apply -f service.yml
-    ```
-  tabs:
-  - title: Shell
-    type: terminal
-    hostname: kubernetes-vm
-  - title: NodePort
-    type: service
-    hostname: kubernetes-vm
-    path: /
-    port: 30001
-  difficulty: basic
-  timelimit: 600
-- slug: 03-showing-the-service
-  id: qh8v1izdymkq
-  type: challenge
-  title: Viewing NGINX
-  teaser: View the service in an embedded tab
-  notes:
-  - type: text
-    contents: |-
-      To make sure you can view the service,
-      we configured an embedded tab to point to the port on the VM.
-  assignment: |-
-    This is an embedded nginx tab of the NodePort service you deployed in the previous challenge.
-
-    Press **Check** to continue to the next challenge.
-  tabs:
-  - title: NodePort
-    type: service
-    hostname: kubernetes-vm
-    path: /
-    port: 30001
-  difficulty: basic
-  timelimit: 600
-- slug: 04-kubernetes-dashboard
-  id: lz3wgs4qaigx
-  type: challenge
-  title: Kubernetes Dashboard
-  teaser: Expose the kubernetes dashboard in a tab
-  assignment: |-
-    ## Step 1
-    To get the token, copy and run this snippet
-    ```
-    ./token.sh
-    ```
-
-    ## Step 2
-    To login to the dashboard, use the token in the second tab.
-
-    ## Finish
-    If you've viewed the dashboard, click **Check** to finish this track.
-  tabs:
-  - title: Shell
-    type: terminal
-    hostname: kubernetes-vm
-  - title: Kubernetes Dashboard
-    type: service
-    hostname: kubernetes-vm
-    path: /api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-    port: 8001
-  difficulty: basic
-  timelimit: 600
-checksum: "2667691264929578243"
+checksum: "2820705811802328873"

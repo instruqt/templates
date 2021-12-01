@@ -1,0 +1,23 @@
+---
+slug: creating-a-directory
+id: sn24rtbabl3y
+type: challenge
+title: Creating a directory
+teaser: Learn how to create directory
+tabs:
+- title: Shell
+  type: terminal
+  hostname: container
+difficulty: basic
+timelimit: 600
+---
+
+Create a directory with the name `instruqt` to complete this challenge.
+
+Use the `mkdir` command to create the directory:
+
+```
+mkdir instruqt
+```
+
+To complete this track click the **Check** button.

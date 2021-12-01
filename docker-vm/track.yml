@@ -1,5 +1,5 @@
 slug: docker-vm
-id: uzxqici3wh6h
+id: 4xje3qjoz01e
 type: track
 title: Sandbox virtual machine
 teaser: Use a virtual machine (VM) as a sandbox host
@@ -19,88 +19,9 @@ tags: []
 owner: templates
 developers:
 - victor@instruqt.com
-- wietse@instruqt.com
 - matthisk@instruqt.com
+- wietse@instruqt.com
+- bruno@instruqt.com
 private: false
 published: true
-challenges:
-- slug: 01-building-an-image
-  id: 5pfctcg5dylf
-  type: challenge
-  title: Building a container image
-  teaser: Learn how to build an image using a Dockerfile
-  notes:
-  - type: text
-    contents: |
-      # Learn about Docker
-      Docker is an open platform for developing, shipping, and running applications.
-      Docker enables you to separate your applications from your infrastructure so
-      you can deliver software quickly. Containers run anywhere!
-
-      In this first challenge, you'll create a container image. Please wait while we
-      boot a virtual machine for you.
-  assignment: |
-    Use this command to build a Docker image using the Dockerfile in
-    this directory:
-
-    ```
-    docker build -t my-service .
-    ```
-
-    Did you notice the tab with the source code editor, next to
-    the terminal?
-
-    To complete the
-    challenge, press **Check**."
-  tabs:
-  - title: Terminal
-    type: terminal
-    hostname: docker-vm
-  - title: Editor
-    type: code
-    hostname: docker-vm
-    path: /app
-  difficulty: basic
-  timelimit: 600
-- slug: 02-running-a-container
-  id: fty3fwbuybcd
-  type: challenge
-  title: Starting a container
-  teaser: Start the container image you've just built
-  notes:
-  - type: text
-    contents: |
-      # Starting a container image
-      Container images can be started any where a container runtime is installed.
-  assignment: |-
-    Now that you have built a container image, you can run it.
-
-    ## Step 1
-    Run the following command to start the container:
-    ```
-    docker run --name some-container -p 80:80 -d my-service
-    ```
-
-    ## Step 2
-    Check the nginx tab (next the the terminal tab) to verify if the container is running.
-    You should see a "Welcom to nginx" message
-
-    ## Step 3
-    To verify if the container is running using the command line, run this command:
-    ```
-    docker container ls
-    ```
-
-    ## Check
-    To complete this track, press **Check**
-  tabs:
-  - title: Terminal
-    type: terminal
-    hostname: docker-vm
-  - title: nginx
-    type: service
-    hostname: docker-vm
-    port: 80
-  difficulty: basic
-  timelimit: 600
-checksum: "1451108754495598935"
+checksum: "2522178083920343725"
