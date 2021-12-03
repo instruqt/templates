@@ -1,18 +1,18 @@
 ---
 slug: kubernetes-dashboard
-id: nxsxykltjne6
+id: lz3wgs4qaigx
 type: challenge
 title: Kubernetes Dashboard
 teaser: Expose the kubernetes dashboard in a tab
 tabs:
-- title: Shell
-  type: terminal
-  hostname: kubernetes-vm
-- title: Kubernetes Dashboard
-  type: service
-  hostname: kubernetes-vm
-  path: /api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-  port: 8001
+  - title: Shell
+    type: terminal
+    hostname: kubernetes-vm
+  - title: Kubernetes Dashboard
+    type: service
+    hostname: kubernetes-vm
+    path: /api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+    port: 8001
 difficulty: basic
 timelimit: 600
 ---

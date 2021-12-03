@@ -1,5 +1,5 @@
 slug: vscode-typescript
-id: heq3uinx48p5
+id: 0dxngfkws4op
 type: track
 title: VSCode & TypeScript
 teaser: Edit and test TypeScript applications in VSCode
@@ -13,14 +13,13 @@ description: |-
   - Run a unit test suite in a check script
 icon: https://cdn.instruqt.com/assets/templates/ts.png
 tags:
-- vscode
-- typescript
+  - vscode
+  - typescript
 owner: templates
 developers:
-- matthisk@instruqt.com
-- vadym@instruqt.com
-- wietse@instruqt.com
-- bruno@instruqt.com
+  - wietse@instruqt.com
+  - matthisk@instruqt.com
+  - vadym@instruqt.com
 private: false
 published: true
-checksum: "15371233408017026571"
+checksum: "9664008177932780554"

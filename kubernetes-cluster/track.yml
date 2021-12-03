@@ -1,5 +1,5 @@
 slug: kubernetes-cluster
-id: mijo2agvkqdf
+id: 2lb3tdzl8dan
 type: track
 title: Multi-node Kubernetes cluster
 teaser: Setup a Kubernetes cluster on multiple sandbox hosts
@@ -14,13 +14,12 @@ description: |-
     - Use the track setup script to block loading the track until all services are up
 icon: https://cdn.instruqt.com/assets/templates/kubernetes.png
 tags:
-- ""
+  - ""
 owner: templates
 developers:
-- ade@instruqt.com
-- wietse@instruqt.com
-- bruno@instruqt.com
+  - ade@instruqt.com
+  - wietse@instruqt.com
 private: false
 published: true
 show_timer: true
-checksum: "12032498903304841612"
+checksum: "17090414573333312076"

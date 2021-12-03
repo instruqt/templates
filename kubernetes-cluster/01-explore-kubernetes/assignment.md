@@ -1,6 +1,6 @@
 ---
 slug: explore-kubernetes
-id: pvutdsfekqgo
+id: e6izfra7vgpl
 type: challenge
 title: Explore Kubernetes
 teaser: Explore Kubernetes

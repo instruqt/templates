@@ -1,14 +1,14 @@
 ---
 slug: passing-tests
-id: ykg1ww5ieazv
+id: kgsrl1diqfpz
 type: challenge
 title: Passing tests
 teaser: Learn how to run and pass tests
 tabs:
-- title: Code editor
-  type: service
-  hostname: container
-  port: 8080
+  - title: Code editor
+    type: service
+    hostname: container
+    port: 8080
 difficulty: basic
 timelimit: 600
 ---

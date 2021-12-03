@@ -1,13 +1,13 @@
 ---
 slug: creating-a-directory
-id: sn24rtbabl3y
+id: 0tncbxalxf6y
 type: challenge
 title: Creating a directory
 teaser: Learn how to create directory
 tabs:
-- title: Shell
-  type: terminal
-  hostname: container
+  - title: Shell
+    type: terminal
+    hostname: container
 difficulty: basic
 timelimit: 600
 ---

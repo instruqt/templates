@@ -1,22 +1,22 @@
 ---
 slug: running-a-container
-id: qijmshz1juft
+id: fty3fwbuybcd
 type: challenge
 title: Starting a container
 teaser: Start the container image you've just built
 notes:
-- type: text
-  contents: |
-    # Starting a container image
-    Container images can be started any where a container runtime is installed.
+  - type: text
+    contents: |
+      # Starting a container image
+      Container images can be started any where a container runtime is installed.
 tabs:
-- title: Terminal
-  type: terminal
-  hostname: docker-vm
-- title: nginx
-  type: service
-  hostname: docker-vm
-  port: 80
+  - title: Terminal
+    type: terminal
+    hostname: docker-vm
+  - title: nginx
+    type: service
+    hostname: docker-vm
+    port: 80
 difficulty: basic
 timelimit: 600
 ---
