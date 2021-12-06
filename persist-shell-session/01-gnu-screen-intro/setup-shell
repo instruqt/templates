@@ -1,0 +1,40 @@
+#!/bin/sh
+#
+# This script runs when the platform setup the challenge.
+#
+# The platform determines if the script was successful using the exit code of this
+# script. If the exit code is not 0, the script fails. 
+#
+
+# Generate a .screenrc file
+cat > ~/.screenrc <<-EOF 
+# ~/.screenrc configuration file
+
+# Set the default shell
+shell "/bin/bash"
+
+# These lines give us a pretty navigation bar at the bottom
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kW}[ %{m}%H %{W}][%= %{= kw}%?%-Lw%?%{r}(%{g}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{W}][%{Y} %d/%m %{Y}%c %{W}]'
+
+# Disable the startup message
+startup_message off
+
+# Disable Visual Bell
+vbell off
+
+# Increase the scrollback buffer
+defscrollback 5000
+
+# Use SHIFT-right and SHIFT-left arrow to change windows
+bindkey ^[[1;2D prev
+bindkey ^[[1;2C next
+
+# Add your own programs here to auto-start them in a window.
+# screen -t htop 0 htop
+# screen -t nginx 1 /usr/bin/nginx -t -c ~/mynginx.conf -g "pid /var/run/nginx.pid; worker_processes 2;"
+# screen -t custom 2 /your/command/here
+EOF
+
+exit 0

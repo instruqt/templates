@@ -1,0 +1,18 @@
+slug: persist-shell-session
+id: j2afw93fbarw
+type: track
+title: Persistent Shell Environments
+teaser: Run a service in the background or keep a long-running command going between
+  challenges with the GNU screen tool.
+description: |-
+  Sometimes a track requires users to start a command and leave it running in a terminal window. The problem is when you change challenges the shell environment gets reset, killing your long-running command.
+
+  You can use the [GNU Screen](https://www.gnu.org/software/screen/) tool to persist a running process or shell environment across multiple challenges.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: instruqt-testing
+developers:
+- sean@instruqt.com
+private: true
+published: true
+checksum: "14482032976034392835"
