@@ -1,0 +1,23 @@
+#!/bin/bash
+mkdir /root/saas_example
+/bin/set-workdir /root/saas_example
+
+# Create a github.tf file
+cat > main.tf <<-EOF
+terraform {
+  required_providers {
+    github = {
+      source  = "integrations/github"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "github" {}
+
+resource "github_repository" "example" {
+  name        = "instruqt-terraform-example"
+  description = "Example repo created from Instruqt with Terraform"
+  visibility = "public"
+}
+EOF

@@ -1,0 +1,18 @@
+slug: saas-terraform-provider
+type: track
+title: Building Instruqt Track Infrastructure with Terraform
+teaser: This track shows you how to use Instruqt with Terraform to build cloud resources or configure SaaS accounts.
+description: |-
+  Terraform is a popular open source infrastructure as code tool. Terraform can be used to build infrastructure on any public cloud, and it can also be used to configure many SaaS services.
+
+  This track walks you through using terraform to configure resources in AWS. It also provides an example workflow for integrating with a SaaS platform that supports terraform.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags:
+- terraform
+- saas
+owner: instruqt
+developers:
+- sean@instruqt.com
+private: true
+published: true
+checksum: ""

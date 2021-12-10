@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Download and install Terraform
+curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+apt -y install terraform
+
+# Clone the hashicat-aws repository
+git clone https://github.com/hashicorp/hashicat-aws
+/bin/set-workdir "/root/hashicat-aws"

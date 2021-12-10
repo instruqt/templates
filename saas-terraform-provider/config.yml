@@ -1,0 +1,15 @@
+version: "3"
+containers:
+- name: workstation
+  image: ubuntu
+  shell: /bin/bash
+  memory: 256
+- name: cloud-client
+  image: gcr.io/instruqt/cloud-client
+  shell: /bin/bash
+  ports:
+  - 80
+aws_accounts:
+- name: instruqt-terraform-lab
+  managed_policies:
+  - arn:aws:iam::aws:policy/AdministratorAccess
