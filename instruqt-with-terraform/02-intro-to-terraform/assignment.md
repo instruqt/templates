@@ -1,8 +1,9 @@
 ---
 slug: intro-to-terraform
+id: u64tfxxcpwno
 type: challenge
 title: "\U0001F3D7️ Introduction to Terraform"
-teaser: Just Enough Terraform
+teaser: Just enough Terraform to build on Instruqt
 notes:
 - type: text
   contents: |
@@ -13,7 +14,7 @@ tabs:
 - title: Text Editor
   type: code
   hostname: workstation
-  path: /root/aws
+  path: /root/hashicat-aws
 - title: Shell
   type: terminal
   hostname: workstation
@@ -25,22 +26,31 @@ tabs:
 difficulty: basic
 timelimit: 3600
 ---
-In this challenge you'll learn a few basic Terraform commands and a bit about how Terraform works.
+<style type="text/css" rel="stylesheet">
+hr.cyan { background-color: cyan; color: cyan; height: 2px; margin-bottom: -10px; }
+h2.cyan { color: cyan; }
+</style>In this challenge you'll learn a few basic Terraform commands and a bit about how Terraform works.
 
-## Overview
+<h2 class="cyan">Overview</h2>
+<hr class="cyan">
+
 [Terraform](https://terraform.io) is an open source, infrastructure as code tool for building cloud resources. Terraform works with providers, which handle all of the interactions with various cloud APIs. For example, if you wish to build resources in AWS, you can use the [Terraform provider for AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs).
 
-## Terraform Code
+<h2 class="cyan">Terraform Code</h2>
+<hr class="cyan">
+
 Click on the **Text Editor** tab on the left and open the **main.tf** file. This is the code you'll use to build infrastructure. We'll be using the sample Hashicat application for this track.
 
-## Exercises
+<h2 class="cyan">Exercises</h2>
+<hr class="cyan">
+
 Let's try a few Terraform commands.
 
 Click on the **Shell** tab and run each of these commands in your shell prompt:
 
 ```bash
 terraform version
-terraform help
+terraform -help
 terraform init
 ```
 

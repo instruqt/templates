@@ -1,5 +1,6 @@
 ---
 slug: setup-our-environment
+id: yqp2fjyit08o
 type: challenge
 title: "\U0001F3E1 Getting Started"
 teaser: Log onto your workstation and AWS account.
@@ -11,7 +12,7 @@ tabs:
 - title: Text Editor
   type: code
   hostname: workstation
-  path: /root/aws
+  path: /root/hashicat-aws
 - title: Shell
   type: terminal
   hostname: workstation

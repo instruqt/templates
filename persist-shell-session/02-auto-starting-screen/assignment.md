@@ -1,6 +1,6 @@
 ---
 slug: auto-starting-screen
-id: awn3nh5tiatz
+id: dfojwmyqvlkv
 type: challenge
 title: ⚙️ Auto Starting Screen for Your Users
 teaser: This example automatically starts screen with some preconfigured windows.

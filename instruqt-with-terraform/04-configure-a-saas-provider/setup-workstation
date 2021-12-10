@@ -1,6 +1,7 @@
 #!/bin/bash
 mkdir /root/saas_example
 /bin/set-workdir /root/saas_example
+cd /root/saas_example
 
 # Create a github.tf file
 cat > main.tf <<-EOF
@@ -20,4 +21,9 @@ resource "github_repository" "example" {
   description = "Example repo created from Instruqt with Terraform"
   visibility = "public"
 }
+
+output "repo_url" {
+  value = github_repository.example.http_clone_url
+}
+
 EOF

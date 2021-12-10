@@ -1,0 +1,38 @@
+#!/bin/bash
+# Install prerequisites. You can speed up your boot time by baking these into 
+# a container or virtual machine image.
+apt -y update
+DEBIAN_FRONTEND=noninteractive apt -y install curl gnupg lsb-release git software-properties-common
+
+# Download and install Terraform
+curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
+apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+apt -y install terraform
+
+# Clone the hashicat-aws repository
+git clone https://github.com/hashicorp/hashicat-aws
+/bin/set-workdir "/root/hashicat-aws"
+
+# Example of how to run terraform during setup
+# The basic idea here is to clone a repository with terraform code in it,
+# then change directories, edit/manipulate files if needed, and then run
+# a terraform apply.
+echo "#################################################################"
+echo "Beginning terraform setup from track_scripts/setup-workstation..."
+echo "#################################################################"
+cd /tmp
+git clone https://github.com/hashicorp/hashicat-aws
+cd hashicat-aws
+
+# These cp commands are here so we can run minimal terraform for speed.
+# The *.start files only create a VPC and nothing else.
+cp exercises/main.tf.start main.tf
+cp exercises/outputs.tf.start outputs.tf
+
+## Here we init and do the actual build. You can pass variables in with the
+## -var flag or via environment variables.
+terraform init
+terraform apply -var prefix=test -auto-approve
+echo "#################################################################"
+echo "Terraform setup complete."
+echo "#################################################################"
