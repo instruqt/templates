@@ -26,7 +26,7 @@ timelimit: 3600
 ---
 **Want the source code for this track?** Head over to our templates repo:
 
-https://github.com/instruqt/templates/master/tree/instruqt-with-terraform
+https://github.com/instruqt/templates/tree/main/instruqt-with-terraform
 
 <hr>
 
