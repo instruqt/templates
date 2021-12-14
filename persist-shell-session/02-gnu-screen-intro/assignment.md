@@ -102,4 +102,8 @@ screen -r myscreen
 
 And that's it! You've got the basics. Now you can run any program in a screen window and it will stay running even if you detach from the session.
 
-Continue to the next challenge and we'll learn how to automatically start screen with preconfigured settings.
+Visit the templates repo to see the source code for this track:
+
+https://github.com/instruqt/templates/tree/main/persist-shell-session
+
+
