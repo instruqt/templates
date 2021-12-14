@@ -24,6 +24,12 @@ tabs:
 difficulty: basic
 timelimit: 3600
 ---
+**Want the source code for this track?** Head over to our templates repo:
+
+https://github.com/instruqt/templates/master/tree/instruqt-with-terraform
+
+<hr>
+
 Welcome to your training environment! We have created a brand new AWS account and workstation that you'll use for the duration of this track.
 
 Let's take a moment to get familiar with the Instruqt user interface. On the left side of the screen you'll see three different tabs.
