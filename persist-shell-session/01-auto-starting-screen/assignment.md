@@ -7,8 +7,15 @@ teaser: This example automatically starts screen with some preconfigured windows
   It also includes some handy keyboard shortcuts for changing between windows.
 notes:
 - type: text
-  contents: '[Byobu](https://www.byobu.org/) and [Tmux](https://github.com/tmux/tmux)
-    are also excellent terminal multiplexers.'
+  contents: |-
+    The [GNU Screen](https://www.gnu.org/software/screen/) program is a Terminal Multiplexer.
+
+    You can use it within Instruqt to preserve a shell environment or running command across multiple challenges.
+- type: text
+  contents: "# Did you know?\nThe [GNU Screen](https://www.gnu.org/software/screen/)
+    program was created in 1987.\n\nThe #1 Billboard Top Hot 100 song that year was
+    [Walk Like an Egyptian](https://www.youtube.com/watch?v=Cv6tuzHUuuk) by the Bangles.
+    \U0001F469‍\U0001F3A4\U0001F3B8"
 tabs:
 - title: Shell
   type: terminal
@@ -27,9 +34,18 @@ timelimit: 600
 <style type="text/css" rel="stylesheet">
 hr.cyan { background-color: cyan; color: cyan; height: 2px; margin-bottom: -10px; }
 h2.cyan { color: cyan; }
-</style>You may not want your participants to have to manage GNU Screen.
+</style>In this first challenge we have auto-started a screen session that is prepopulated with the correct windows and processes. You may use the code from this track to create a persistent shell with one or more virtual tabs (windows).
 
-In this challenge we have auto-started a screen session that is prepopulated with the correct windows and processes.
+Let's get started!
+
+<h2 class="cyan">I'm Just Here for the Code</h2>
+<hr class="cyan">
+
+Find the source code for this track in our templates repo. Click the link below to get the source code:
+
+[Instruqt Templates Repo](https://github.com/instruqt/templates/tree/main/persist-shell-session)
+
+The setup script in the 01-auto-starting-screen directory can be copied and used in your own track.
 
 <h2 class="cyan">Easy Navigation with Shift-Arrow Keys</h2>
 <hr class="cyan">
@@ -65,6 +81,15 @@ The second config goes on the end of the `~/.bashrc` file, and it looks like thi
 
 ```bash
 if [[ -z "$STY" ]]; then
+   screen -xRR default
+fi
+```
+
+WARNING: You'll need to escape the dollar sign if you are using a HEREDOC to add this to your file. Here's how it should look in your setup script. This protects the dollar sign and prevents your STY variable from vanishing when the file is rendered:
+
+```bash
+cat >> ~/.bashrc << EOF
+if [[ -z "\$STY" ]]; then
    screen -xRR default
 fi
 ```

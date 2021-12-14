@@ -1,4 +1,5 @@
 # Generate a .screenrc file
+# We use a Bash HEREDOC to create the ~/.screenrc file.
 cat > ~/.screenrc <<-EOF 
 # ~/.screenrc configuration file
 
@@ -30,13 +31,15 @@ screen -t shell 2
 EOF
 
 # Append this onto the end of ~/.bashrc
+# The \ ensures the target file has a literal $STY and not an empty string.
 cat >> ~/.bashrc <<-EOF
 if [[ -z "\$STY" ]]; then
    screen -xRR default
 fi
 EOF
 
-# Create a simple website
+# You may delete these lines, or use this technique
+# to create your own config files.
 cat > /root/index.html << EOF
 <html>
   <head><title>Meow!</title></head>

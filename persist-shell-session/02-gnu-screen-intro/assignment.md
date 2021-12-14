@@ -7,10 +7,8 @@ teaser: The handy Linux screen program allows you connect and disconnect from lo
   sessions on a remote server.
 notes:
 - type: text
-  contents: "# Did you know?\nThe [GNU Screen](https://www.gnu.org/software/screen/)
-    program was created in 1987.\n\nThe #1 Billboard Top Hot 100 song that year was
-    [Walk Like an Egyptian](https://www.youtube.com/watch?v=Cv6tuzHUuuk) by the Bangles.
-    \U0001F469‍\U0001F3A4\U0001F3B8"
+  contents: '[Byobu](https://www.byobu.org/) and [Tmux](https://github.com/tmux/tmux)
+    are also excellent terminal multiplexers.'
 tabs:
 - title: Shell
   type: terminal
@@ -21,7 +19,9 @@ timelimit: 600
 <style type="text/css" rel="stylesheet">
 hr.cyan { background-color: cyan; color: cyan; height: 2px; margin-bottom: -10px; }
 h2.cyan { color: cyan; }
-</style>Have you ever wished you could disconnect from a remote SSH session and reconnect later?
+</style>This challenge is a tutorial that teaches you how to create screen sessions, manage windows, and how to attach and detach from a running session. If you're not familiar with screen take a moment and learn the basics of GNU Screen.
+
+Have you ever wished you could disconnect from a remote SSH session and reconnect later?
 
 The screen command allows you to set up login sessions and terminal windows that you can disconnect from and reconnect to without stopping your running programs.<br>
 
