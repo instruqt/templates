@@ -1,11 +1,6 @@
 #!/bin/sh
 #
-# This script runs when the platform cleanup the challenge.
-#
-# The platform determines if the script was successful using the exit code of this
-# script. If the exit code is not 0, the script fails. 
-#
+# Disables screen auto-start before next challenge.
 
-echo "This is the cleanup script"
-
-exit 0
+head -n -3 /root/.bashrc > /tmp/bashrc
+cp /tmp/bashrc /root/.bashrc
