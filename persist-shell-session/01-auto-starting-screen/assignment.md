@@ -92,6 +92,7 @@ cat >> ~/.bashrc << EOF
 if [[ -z "\$STY" ]]; then
    screen -xRR default
 fi
+EOF
 ```
 
 These three lines force screen to start a new session or attach to the existing one if it's already running. This will happen every time your user hits the refresh button on the Shell tab.
