@@ -1,0 +1,39 @@
+#!/bin/bash
+# Choose your zone and cluster name
+ZONE="us-central1-a"
+CLUSTERNAME="instruqt-cluster"
+
+# First we update the apt package manager cache
+apt -y update
+
+# Then we install some packages in noninteractive mode
+DEBIAN_FRONTEND=noninteractive apt -y install curl wget htop jq vim git apt-transport-https ca-certificates gnupg
+
+# Use the gcloud installation process described in the docs:
+# https://cloud.google.com/sdk/docs/install#deb
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+
+# Configure the Helm repository
+curl https://baltocdn.com/helm/signing.asc | apt-key add -
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | tee /etc/apt/sources.list.d/helm-stable-debian.list
+
+# Update apt again and install gcloud, kubectl and helm
+apt -y update
+apt -y install google-cloud-sdk kubectl helm
+
+# Fetch our Google Service Account credentials
+mkdir -p /root/.config/gcloud
+echo $INSTRUQT_GCP_PROJECT_GCPPROJECT_SERVICE_ACCOUNT_KEY | base64 -d | jq > /root/.config/gcloud/credentials
+
+# Activate the service account
+gcloud auth activate-service-account --key-file /root/.config/gcloud/credentials
+
+# Set our project
+gcloud config set project $INSTRUQT_GCP_PROJECT_GCPPROJECT_PROJECT_ID
+
+# Create the GKE cluster
+gcloud container clusters create $CLUSTERNAME --num-nodes=3 --zone $ZONE
+
+# Get credentials for our cluster
+gcloud container clusters get-credentials $CLUSTERNAME --zone $ZONE

@@ -1,0 +1,16 @@
+slug: kubernetes-cluster-gke
+id: tklrna06zaua
+type: track
+title: Google Kubernetes Engine (GKE)
+teaser: A template track that includes a GKE cluster.
+description: This template includes a single-zone, three node GKE cluster and a workstation
+  with the **kubectl** and **gcloud** commands preinstalled. Use it as a starting
+  point for your own K8s enabled tracks.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: instruqt
+developers:
+- sean@instruqt.com
+private: true
+published: true
+checksum: "1505461062381516930"
