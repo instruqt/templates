@@ -3,9 +3,9 @@ id: 2avvhl0zzsxm
 type: track
 title: Amazon Elastic Kubernetes Service (EKS)
 teaser: A template track that includes a EKS cluster.
-description: This template includes an EKS cluster and a workstation with the **kubectl**
-  and **gcloud** commands preinstalled. Use it as a starting point for your own K8s
-  enabled tracks.
+description: |-
+  This template includes an EKS cluster and a workstation with the **kubectl** and **gcloud** commands preinstalled. Use it as a starting point for your own K8s enabled tracks.
+  Note - an EKS cluster takes up to 25 minutes to deploy. You may wish to utilize Hot Start to reduce startup times for your participants.
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
 tags: []
 owner: instruqt
@@ -13,4 +13,4 @@ developers:
 - sean@instruqt.com
 private: true
 published: true
-checksum: "15195717274038641776"
+checksum: "5221102907406060204"
