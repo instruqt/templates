@@ -1,0 +1,16 @@
+slug: kubernetes-cluster-eks
+id: 2avvhl0zzsxm
+type: track
+title: Amazon Elastic Kubernetes Service (EKS)
+teaser: A template track that includes a EKS cluster.
+description: This template includes an EKS cluster and a workstation with the **kubectl**
+  and **gcloud** commands preinstalled. Use it as a starting point for your own K8s
+  enabled tracks.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: instruqt
+developers:
+- sean@instruqt.com
+private: true
+published: true
+checksum: "15195717274038641776"

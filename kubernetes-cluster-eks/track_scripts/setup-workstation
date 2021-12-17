@@ -1,0 +1,61 @@
+#!/bin/bash
+# Choose your AWS region and cluster name
+AWS_REGION=us-west-2
+CLUSTER_NAME=instruqt
+
+# Wait for Instruqt bootstrap to be complete
+while [ ! -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
+do
+  echo "Waiting for Instruqt to finish booting the VM"
+  sleep 1
+done
+
+# First we update the apt package manager cache
+apt -y update
+
+# Then we install some packages in noninteractive mode
+DEBIAN_FRONTEND=noninteractive apt -y install curl wget htop jq vim git apt-transport-https ca-certificates gnupg awscli
+
+# Configure the Helm apt repository
+curl https://baltocdn.com/helm/signing.asc | apt-key add -
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | tee /etc/apt/sources.list.d/helm-stable-debian.list
+
+# Install helm
+apt -y update
+apt -y install helm
+
+# Install the kubectl command line tool
+curl -o /tmp/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/kubectl
+mv /tmp/kubectl /usr/local/bin
+
+# Install the eksctl command line tool
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+mv /tmp/eksctl /usr/local/bin
+
+# Create an SSH key for our user
+PRIVKEY=$(aws ec2 create-key-pair --region $AWS_REGION --key-name instruqt | jq .KeyMaterial)
+echo -e $PRIVKEY | tr -d '"' > ~/.ssh/instruqt
+chmod 600 ~/.ssh/instruqt
+
+# Stand up an EKS cluster
+eksctl create cluster --name $CLUSTER_NAME --region $AWS_REGION --with-oidc --ssh-access --nodes=3 --ssh-public-key instruqt --version 1.18
+
+# Configure our SSH config file. This enables `ssh nodeX` commands to work
+IPS=$(aws ec2 describe-instances --region $AWS_REGION --query "Reservations[*].Instances[*].[PublicIpAddress]" | jq -r '.[] | .[] | .[]')
+
+COUNT=0
+for ADDR in $IPS; do
+  cat <<-EOF >> ~/.ssh/config
+Host node$COUNT
+  HostName $ADDR
+  User ec2-user
+  IdentityFile ~/.ssh/instruqt
+  StrictHostKeyChecking no
+
+EOF
+  COUNT=$((COUNT+1))
+done
+
+echo "#################################################"
+echo "Setup complete. EKS is ready for use."
+echo "#################################################"

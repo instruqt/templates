@@ -3,6 +3,13 @@
 ZONE="us-central1-a"
 CLUSTERNAME="instruqt-cluster"
 
+# Wait for Instruqt bootstrap to be complete
+while [ ! -f /opt/instruqt/bootstrap/host-bootstrap-completed ]
+do
+  echo "Waiting for Instruqt to finish booting the VM"
+  sleep 1
+done
+
 # First we update the apt package manager cache
 apt -y update
 
