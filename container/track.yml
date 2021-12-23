@@ -19,25 +19,4 @@ developers:
 - wietse@instruqt.com
 private: false
 published: true
-challenges:
-- slug: 01-creating-a-directory
-  id: 5y3ow5tpeafn
-  type: challenge
-  title: Creating a directory
-  teaser: Learn how to create directory
-  assignment: |-
-    Create a directory with the name `instruqt` to complete this challenge.
-
-    Use the `mkdir` command to create the directory:
-    ```
-    mkdir instruqt
-    ```
-
-    To complete this track click the **Check** button.
-  tabs:
-  - title: Shell
-    type: terminal
-    hostname: container
-  difficulty: basic
-  timelimit: 600
 checksum: "15816242732036512581"
