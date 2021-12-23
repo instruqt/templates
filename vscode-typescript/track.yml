@@ -29,17 +29,23 @@ challenges:
   title: Passing tests
   teaser: Learn how to run and pass tests
   assignment: |-
-    ## Step 1
+    Step 1
+    ======
+
     Click "Explorer" > "NPM Scripts" to open the corresponding panel.
     Run the "test" task from it.
 
     The tests should run, and you should see the failing one in the terminal panel.
 
-    ## Step 2
+    Step 2
+    ======
+
     Update the function in src/sum.ts to correctly return the sum.
     At this point, you might want to re-run the tests to see whether the fix is helping.
 
-    ## Check
+    Check
+    ======
+
     To complete this track, press **Check**. It will run the tests and pass if all the tests are passing.
   tabs:
   - title: Code editor
@@ -48,4 +54,4 @@ challenges:
     port: 8080
   difficulty: basic
   timelimit: 600
-checksum: "15642963048771312483"
+checksum: "9977768296209421899"
