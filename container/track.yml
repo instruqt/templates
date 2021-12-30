@@ -3,13 +3,8 @@ id: ntbwtjuarm8w
 type: track
 title: Sandbox container
 teaser: Get started quickly with just one container-based sandbox host.
-description: |-
-  Get started quickly with just one container-based sandbox host.
-
-  **This track demonstrates how to:**
-    - Use an ubuntu container as a sandbox host
-    - Add a simple check script
-    - Use a terminal tab to let the user access the host
+description: Get started quickly with a container-based sandbox host. Choose a container
+  when you need a fast, lightweight Linux system.
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: templates
@@ -20,4 +15,4 @@ developers:
 - matthisk@instruqt.com
 private: false
 published: true
-checksum: "4675509526855534408"
+checksum: "13084223255530500708"

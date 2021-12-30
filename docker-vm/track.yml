@@ -4,10 +4,7 @@ type: track
 title: Sandbox virtual machine
 teaser: Use a virtual machine (VM) as a sandbox host
 description: |-
-  A sandbox host can be a container or a virtual machine (VM).
-
-  One reason to choose a VM over a container is if you need access to
-  the Docker daemon to build and run container images.
+  This template shows you how to use a Virtual Machine (VM). VMs can be used when you need more compute and memory or for running Docker containers.
 
   **This track demonstrates how to:**
     - Provision virtual machine sandbox host using a predefined Compute Engine image
@@ -24,4 +21,4 @@ developers:
 - vadym@instruqt.com
 private: false
 published: true
-checksum: "15621181592575443626"
+checksum: "18201167765865477048"
