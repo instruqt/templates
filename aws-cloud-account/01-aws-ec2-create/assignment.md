@@ -26,7 +26,7 @@ timelimit: 600
 👋 Introduction
 ===============
 
-Use the terminal to create ec2 instance:
+Use the terminal to create EC2 instance:
 
 ```
 aws ec2 run-instances --image-id ami-01685d240b8fbbfeb --instance-type t2.nano

@@ -40,7 +40,7 @@ docker run --name some-container -p 80:80 -d my-service
 ======================
 
 Check the nginx tab (next the the terminal tab) to verify if the container is running.
-You should see a "Welcom to nginx" message
+You should see a "Welcome to nginx" message
 
 ✅ Step 03 - Verify the container
 =================================
@@ -51,8 +51,8 @@ To verify if the container is running using the command line, run this command:
 docker container ls
 ```
 
-🏁 Finsh
-========
+🏁 Finish
+=========
 
 ## Check
 

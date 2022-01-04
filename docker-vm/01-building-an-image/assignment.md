@@ -27,7 +27,7 @@ difficulty: basic
 timelimit: 600
 ---
 
-🧪 Build a docker image
+🧪 Build a Docker image
 =======================
 
 Use this command to build a Docker image using the Dockerfile in

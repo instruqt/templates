@@ -3,7 +3,7 @@ slug: deploying-nginx
 id: vi6npetjooci
 type: challenge
 title: Deploy NGINX
-teaser: Everything starts with a webserver
+teaser: Everything starts with a web server
 notes:
 - type: text
   contents: |-

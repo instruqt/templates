@@ -20,11 +20,11 @@ timelimit: 600
 🚀 Let's start
 ==============
 
-## Login to Aws
+## Login to AWS
 
 Use the credentials displayed in AWS Console tab.
 
-- navigate to Services -> EC2 -> Instances
+- Navigate to Services -> EC2 -> Instances
 
 🏁 Finish
 =========
