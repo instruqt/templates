@@ -4,6 +4,9 @@ id: 5y3ow5tpeafn
 type: challenge
 title: Creating a directory
 teaser: Learn how to create directory
+notes:
+- type: text
+  contents: Please wait while we set up the first challenge
 tabs:
 - title: Shell
   type: terminal
