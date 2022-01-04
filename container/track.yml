@@ -1,5 +1,5 @@
 slug: container
-id: ntbwtjuarm8w
+id: 4zz3tqv3tr9f
 type: track
 title: Sandbox container
 teaser: Get started quickly with just one container-based sandbox host.
@@ -11,8 +11,10 @@ owner: templates
 developers:
 - victor@instruqt.com
 - wietse@instruqt.com
-- vadym@instruqt.com
 - matthisk@instruqt.com
+- vadik.borodin@gmail.com
+- vadym@instruqt.com
+- borodean@gmail.com
 private: false
 published: true
-checksum: "4213451581167088750"
+checksum: "6908167366417810072"

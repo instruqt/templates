@@ -1,6 +1,6 @@
 ---
 slug: kubernetes-dashboard
-id: lz3wgs4qaigx
+id: nxsxykltjne6
 type: challenge
 title: Kubernetes Dashboard
 teaser: Expose the kubernetes dashboard in a tab
@@ -16,14 +16,19 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
-## Step 1
+👋 Introduction
+===============
+## Step 01
 To get the token, copy and run this snippet
 ```
 ./token.sh
 ```
-
-## Step 2
+✅ Dashboard
+============
+## Step 02
 To login to the dashboard, use the token in the second tab.
 
-## Finish
+🏁 Finish
+=========
+## Step 03
 If you've viewed the dashboard, click **Check** to finish this track.

@@ -1,6 +1,6 @@
 ---
 slug: building-an-image
-id: 5pfctcg5dylf
+id: ghgb6oacfuq0
 type: challenge
 title: Building a container image
 teaser: Learn how to build an image using a Dockerfile
@@ -25,15 +25,20 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+🧪 Build a docker image
+=======================
 Use this command to build a Docker image using the Dockerfile in
 this directory:
 
 ```
 docker build -t my-service .
 ```
-
+💡 Source editor
+================
 Did you notice the tab with the source code editor, next to
 the terminal?
 
+🏁 Finish
+=======
 To complete the
 challenge, press **Check**."

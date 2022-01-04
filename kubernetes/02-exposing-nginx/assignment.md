@@ -1,6 +1,6 @@
 ---
 slug: exposing-nginx
-id: 7oqpyx3avcwm
+id: fcu5kqhhyzb7
 type: challenge
 title: Expose the NGINX service
 teaser: Use a NodePort to expose the NGINX webserver
@@ -20,6 +20,8 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+🚀 Let's start
+==============
 Use the terminal to add a NodePort service:
 
 ```

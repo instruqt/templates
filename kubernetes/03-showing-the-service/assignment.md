@@ -1,6 +1,6 @@
 ---
 slug: showing-the-service
-id: qh8v1izdymkq
+id: qea1xere8xgk
 type: challenge
 title: Viewing NGINX
 teaser: View the service in an embedded tab
@@ -18,6 +18,9 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+💡 The NGINX tab
+===============
+
 This is an embedded nginx tab of the NodePort service you deployed in the previous challenge.
 
 Press **Check** to continue to the next challenge.

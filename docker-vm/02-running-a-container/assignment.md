@@ -1,6 +1,6 @@
 ---
 slug: running-a-container
-id: fty3fwbuybcd
+id: qijmshz1juft
 type: challenge
 title: Starting a container
 teaser: Start the container image you've just built
@@ -20,23 +20,30 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+🚀 Let's run it
+===============
+
 Now that you have built a container image, you can run it.
 
-## Step 1
+👨‍💻 Step 01 - Start container
+============================
 Run the following command to start the container:
 ```
 docker run --name some-container -p 80:80 -d my-service
 ```
 
-## Step 2
+👀 Step 02 - NGINX tab
+======================
 Check the nginx tab (next the the terminal tab) to verify if the container is running.
 You should see a "Welcom to nginx" message
 
-## Step 3
+✅ Step 03 - Verify the container
+=================================
 To verify if the container is running using the command line, run this command:
 ```
 docker container ls
 ```
-
+🏁 Finsh
+=======
 ## Check
 To complete this track, press **Check**

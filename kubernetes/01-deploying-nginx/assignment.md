@@ -1,6 +1,6 @@
 ---
 slug: deploying-nginx
-id: cm3mp385y082
+id: vi6npetjooci
 type: challenge
 title: Deploy NGINX
 teaser: Everything starts with a webserver
@@ -23,10 +23,14 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+👋 Introduction
+==============
+
 Use the terminal to deploy nginx:
 
 ```
 kubectl create deployment nginx --image nginx
 ```
-
+🏁 Finish
+========
 To complete this challenge, press **Check**.

@@ -1,6 +1,6 @@
 ---
 slug: aws-ec2-delete
-id: tlod6cx1ytfr
+id: ys7uyl6ckrtk
 type: challenge
 title: AWS EC2 instance deletion
 teaser: Use AWS console to manage your EC2 virtual machine.
@@ -16,7 +16,16 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
-Login to AWS console using credentials displayed in AWS Console tab, navigate to Services -> EC2 -> Instances,
-and terminate instance you created.
+🚀 Let's start
+==============
+## Login to Aws
+
+Use the credentials displayed in AWS Console tab.
+
+* navigate to Services -> EC2 -> Instances
+
+🏁 Finish
+==========
+## Terminate instance you created.
 
 To complete this challenge, press **Check**.

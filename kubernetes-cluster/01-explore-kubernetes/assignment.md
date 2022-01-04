@@ -1,6 +1,6 @@
 ---
 slug: explore-kubernetes
-id: e6izfra7vgpl
+id: pvutdsfekqgo
 type: challenge
 title: Explore Kubernetes
 teaser: Explore Kubernetes
@@ -23,21 +23,26 @@ tabs:
 difficulty: basic
 timelimit: 500
 ---
+👋 Introduction
+===============
 To complete this track, use `kubectl` to
 print all nodes in the cluster.
 
-## Step 1
+📄 Step 01
+==========
 List the three nodes in the cluster
 ```
 kubectl get nodes
 ```
 
-## Step 2
+🧩 Step 02
+=======
 Open the second tab (next to the terminal) with the Kubernetes Dashboard.
 
 To login, use the token you can print with this command:
 ```
 ./token.sh
 ```
-
+🏁 Finish the track
+================
 Press **Check** to finish the track.

@@ -1,6 +1,6 @@
 ---
 slug: aws-ec2-create
-id: 8mbkksmjakif
+id: zlnuvv2nu8mi
 type: challenge
 title: Create an AWS EC2 instance
 teaser: Every cloud starts from VM
@@ -22,6 +22,8 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+👋 Introduction
+===========
 Use the terminal to create ec2 instance:
 
 ```

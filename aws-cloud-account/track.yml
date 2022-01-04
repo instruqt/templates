@@ -1,5 +1,5 @@
 slug: aws-cloud-account
-id: 0ytrmq5i2xlu
+id: 44zxuqynye2j
 type: track
 title: AWS Cloud Account
 teaser: Learn how to build tracks with an AWS account
@@ -20,6 +20,7 @@ developers:
 - arslan@instruqt.com
 - matthisk@instruqt.com
 - bruno@instruqt.com
+- borodean@gmail.com
 private: false
 published: true
-checksum: "13439872475089790040"
+checksum: "932123415092763875"

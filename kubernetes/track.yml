@@ -1,5 +1,5 @@
 slug: kubernetes
-id: e9kwwum26pn3
+id: 3dy89r39vlpj
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
@@ -16,6 +16,7 @@ owner: templates
 developers:
 - wietse@instruqt.com
 - vadym@instruqt.com
+- borodean@gmail.com
 private: false
 published: true
-checksum: "10331026116422211984"
+checksum: "7812567846924130999"
