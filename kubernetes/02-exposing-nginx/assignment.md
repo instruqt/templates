@@ -20,8 +20,10 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
 🚀 Let's start
 ==============
+
 Use the terminal to add a NodePort service:
 
 ```

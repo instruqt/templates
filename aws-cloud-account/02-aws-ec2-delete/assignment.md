@@ -16,16 +16,19 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
 🚀 Let's start
 ==============
+
 ## Login to Aws
 
 Use the credentials displayed in AWS Console tab.
 
-* navigate to Services -> EC2 -> Instances
+- navigate to Services -> EC2 -> Instances
 
 🏁 Finish
-==========
+=========
+
 ## Terminate instance you created.
 
 To complete this challenge, press **Check**.

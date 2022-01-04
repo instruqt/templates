@@ -22,8 +22,10 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
 👋 Introduction
-===========
+===============
+
 Use the terminal to create ec2 instance:
 
 ```
