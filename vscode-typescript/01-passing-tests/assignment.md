@@ -12,6 +12,7 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
 Step 1
 ======
 
@@ -27,6 +28,6 @@ Update the function in src/sum.ts to correctly return the sum.
 At this point, you might want to re-run the tests to see whether the fix is helping.
 
 Check
-======
+=====
 
 To complete this track, press **Check**. It will run the tests and pass if all the tests are passing.

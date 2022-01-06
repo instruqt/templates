@@ -8,6 +8,7 @@ notes:
 - type: text
   contents: |
     # Starting a container image
+
     Container images can be started any where a container runtime is installed.
 tabs:
 - title: Terminal
@@ -20,23 +21,39 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
+🚀 Let's run it
+===============
+
 Now that you have built a container image, you can run it.
 
-## Step 1
+👨‍💻 Step 01 - Start container
+============================
+
 Run the following command to start the container:
+
 ```
 docker run --name some-container -p 80:80 -d my-service
 ```
 
-## Step 2
-Check the nginx tab (next the the terminal tab) to verify if the container is running.
-You should see a "Welcom to nginx" message
+👀 Step 02 - NGINX tab
+======================
 
-## Step 3
+Check the nginx tab (next the the terminal tab) to verify if the container is running.
+You should see a "Welcome to nginx" message
+
+✅ Step 03 - Verify the container
+=================================
+
 To verify if the container is running using the command line, run this command:
+
 ```
 docker container ls
 ```
 
+🏁 Finish
+=========
+
 ## Check
+
 To complete this track, press **Check**

@@ -18,6 +18,10 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
+💡 The NGINX tab
+================
+
 This is an embedded nginx tab of the NodePort service you deployed in the previous challenge.
 
 Press **Check** to continue to the next challenge.
