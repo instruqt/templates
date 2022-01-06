@@ -1,12 +1,12 @@
 ---
-slug: config-helm
-id: l7pgaj4koevf
+slug: check-nginx
+id: vaabn8etikvs
 type: challenge
-title: config helm
-teaser: Helm will install ngix.
+title: Check that the nginx chart is deployed
+teaser: A setup script has used helm to install a nginx chart. Check that it worked!
 notes:
 - type: text
-  contents: Helm works over kubernetes!
+  contents: Helm is one of the most popular package manager for kubernetes!
 tabs:
 - title: Shell
   type: terminal

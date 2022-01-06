@@ -1,14 +1,20 @@
 slug: helm
-id: jzui2fhkbxbq
+id: omkbubvr1uf3
 type: track
 title: Helm template
-teaser: A Helm template
-description: Learn how to use helm
-icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+teaser: Learn how to install helm charts.
+description: |-
+  Learn how to install helm charts
+
+  **This track will provide you with:**
+    - A virtual machine with a kubernetes cluster
+    - Helm already installed in the machine
+    - An NGINX chart already installed and deployed
+icon: ./assets/helmIcon.svg
 tags: []
-owner: instruqt
+owner: templates
 developers:
 - gerson@instruqt.com
 private: false
 published: false
-checksum: "15996817084798668229"
+checksum: "4775471555682358336"
