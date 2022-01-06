@@ -1,6 +1,6 @@
 ---
 slug: check-nginx
-id: vaabn8etikvs
+id: o5uzceb0lsbs
 type: challenge
 title: Check that the nginx chart is deployed
 teaser: A setup script has used helm to install a nginx chart. Check that it worked!
