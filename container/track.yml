@@ -11,8 +11,8 @@ owner: templates
 developers:
 - victor@instruqt.com
 - wietse@instruqt.com
-- matthisk@instruqt.com
 - vadym@instruqt.com
+- matthisk@instruqt.com
 private: false
 published: true
 checksum: "640984014694652024"
