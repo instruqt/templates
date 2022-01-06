@@ -1,5 +1,5 @@
 slug: kubernetes
-id: 3dy89r39vlpj
+id: e9kwwum26pn3
 type: track
 title: Kubernetes
 teaser: Learn how to build Kubernetes-based tracks with this template
@@ -18,4 +18,4 @@ developers:
 - vadym@instruqt.com
 private: false
 published: true
-checksum: "8492040705129680640"
+checksum: "790603894836804035"

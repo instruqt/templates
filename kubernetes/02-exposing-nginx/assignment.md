@@ -1,6 +1,6 @@
 ---
 slug: exposing-nginx
-id: fcu5kqhhyzb7
+id: 7oqpyx3avcwm
 type: challenge
 title: Expose the NGINX service
 teaser: Use a NodePort to expose the NGINX web server
