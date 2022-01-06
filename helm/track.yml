@@ -1,0 +1,14 @@
+slug: helm
+id: jzui2fhkbxbq
+type: track
+title: Helm template
+teaser: A Helm template
+description: Learn how to use helm
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: instruqt
+developers:
+- gerson@instruqt.com
+private: false
+published: false
+checksum: "15996817084798668229"
