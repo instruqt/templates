@@ -15,8 +15,8 @@ icon: ./assets/helmIcon.svg
 tags: []
 owner: templates
 developers:
-- victor@instruqt.com
-- gerson@instruqt.com
+  - victor@instruqt.com
+  - gerson@instruqt.com
 private: false
 published: true
-checksum: "8885629362649878631"
+checksum: "9979754119823216916"
