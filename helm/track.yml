@@ -1,0 +1,21 @@
+slug: helm
+id: 5qfxre4keecb
+type: track
+title: helm
+teaser: Learn how to install helm charts with Instruqt.
+description: |-
+  Learn how to install helm charts
+
+  **This track will provide you with:**
+    - A virtual machine with a kubernetes cluster
+    - Helm already installed in the machine
+    - An NGINX chart already installed and deployed
+icon: ./assets/helmIcon.svg
+tags: []
+owner: templates
+developers:
+- victor@instruqt.com
+- gerson@instruqt.com
+private: true
+published: false
+checksum: "8885629362649878631"
