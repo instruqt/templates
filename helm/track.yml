@@ -4,7 +4,7 @@ type: track
 title: Helm template
 teaser: Learn how to install helm charts.
 description: |-
-  Learn how to install helm charts
+  Learn how to build tracks with a pre-installed helm chart in this template.
 
   **This track will provide you with:**
     - A virtual machine with a kubernetes cluster
