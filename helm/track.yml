@@ -1,7 +1,7 @@
 slug: helm
 id: 5qfxre4keecb
 type: track
-title: Helm template
+title: Helm chart
 teaser: Learn how to install helm charts.
 description: |-
   Learn how to build tracks with a pre-installed helm chart in this template.
