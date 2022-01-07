@@ -6,7 +6,7 @@ title: Check that the NGINX chart is installed
 teaser: A setup script has used helm to install a nginx chart. Check that it worked!
 notes:
 - type: text
-  contents: Helm is one of the most popular package manager for kubernetes!
+  contents: Helm is one of the most popular package managers for kubernetes!
 tabs:
 - title: Shell
   type: terminal
