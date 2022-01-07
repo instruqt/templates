@@ -25,7 +25,7 @@ You can check that Helm is available and its version with this command:
 helm version
 ```
 
-You will get a message with the build info which should look like this:
+You should get a message with the build info that looks like this:
 
 ```
 version.BuildInfo{Version:"v3.7.2", GitCommit:"663a896f4a815053445eec4153677ddc24a0a361", GitTreeState:"clean", GoVersion:"go1.16.10"}
