@@ -1,6 +1,6 @@
 ---
 slug: check-nginx
-id: cv2djpcd86cw
+id: o5uzceb0lsbs
 type: challenge
 title: Check that the NGINX chart is installed
 teaser: A setup script has used helm to install an NGINX chart. Verify that it worked!
