@@ -9,7 +9,7 @@ description: |-
   **This track will provide you with:**
     - A virtual machine with a kubernetes cluster
     - Helm already installed on the machine
-    - An NGINX chart already installed and deployed
+    - NGINX ingress controller pre-installed on the kubernetes cluster
 icon: ./assets/helmIcon.svg
 tags: []
 owner: templates
