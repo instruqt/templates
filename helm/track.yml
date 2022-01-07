@@ -1,20 +1,21 @@
 slug: helm
 id: 5qfxre4keecb
 type: track
-title: Helm chart
+title: helm
 teaser: Learn how to install helm charts.
 description: |-
-  Learn how to build tracks with a pre-installed helm chart in this template.
+  Learn how to install helm charts
 
   **This track will provide you with:**
     - A virtual machine with a kubernetes cluster
-    - Helm already installed on the machine
-    - NGINX ingress controller pre-installed on the kubernetes cluster
+    - Helm already installed in the machine
+    - An NGINX chart already installed and deployed
 icon: ./assets/helmIcon.svg
 tags: []
 owner: templates
 developers:
+- victor@instruqt.com
 - gerson@instruqt.com
-private: false
+private: true
 published: false
-checksum: "4775471555682358336"
+checksum: "8885629362649878631"
