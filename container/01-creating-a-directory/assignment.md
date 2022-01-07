@@ -14,9 +14,14 @@ tabs:
 difficulty: basic
 timelimit: 600
 ---
+
+🤖 Let's start
+==============
+
 Create a directory with the name `instruqt` to complete this challenge.
 
 Use the `mkdir` command to create the directory:
+
 ```
 mkdir instruqt
 ```
