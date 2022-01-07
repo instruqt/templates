@@ -61,4 +61,4 @@ svclb-my-ingress-nginx-controller-fwrxs       2/2     Running   0          3m49s
 my-ingress-nginx-controller-b9d8cddf4-gwlgr   1/1     Running   0          3m49s
 ```
 
-If the status of all the pods shows that they are running, you can click the check button to finish this track!
+You can click the check button to finish this track!
