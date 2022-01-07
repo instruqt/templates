@@ -8,7 +8,7 @@ description: |-
 
   **This track will provide you with:**
     - A virtual machine with a kubernetes cluster
-    - Helm already installed in the machine
+    - Helm already installed on the machine
     - An NGINX chart already installed and deployed
 icon: ./assets/helmIcon.svg
 tags: []
