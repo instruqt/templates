@@ -47,7 +47,6 @@ NAME                    NAMESPACE       REVISION        UPDATED                 
 my-ingress-nginx        default         1               2022-01-06 16:00:34.622220076 +0000 UTC deployed        ingress-nginx-4.0.13    1.1.0
 ```
 
-
 Aditionally, you can check that the NGINX pods are running, remember that Helm works over kubernetes. Just run this command to verify that the NGINX pods are up and running:
 
 ```
