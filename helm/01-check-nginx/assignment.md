@@ -15,7 +15,7 @@ difficulty: basic
 timelimit: 600
 ---
 👀 Verify that Helm is available
-==========================
+================================
 
 Helm has been installed on this virtual machine alongside an NGINX ingress controller Helm chart.
 
@@ -31,8 +31,8 @@ You will get a message with the build info which should look like this:
 version.BuildInfo{Version:"v3.7.2", GitCommit:"663a896f4a815053445eec4153677ddc24a0a361", GitTreeState:"clean", GoVersion:"go1.16.10"}
 ```
 
-👀 Verify that the NGINX chart is installed and the pods are running
-==========================
+🚀 The NGINX chart is installed and the pods are running
+========================================================
 
 You can use Helm to show all the charts that are installed on this machine. To do this, run this command:
 
@@ -51,7 +51,7 @@ my-ingress-nginx        default         1               2022-01-06 16:00:34.6222
 Aditionally, you can check that the NGINX pods are running, remember that Helm works over kubernetes. Just run this command to verify that the NGINX pods are up and running:
 
 ```
-kubectl get po
+kubectl get pods
 ```
 
 This should show you the NGINX controller pods:
