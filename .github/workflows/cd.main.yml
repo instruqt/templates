@@ -1,15 +1,15 @@
 name: CD
-on:
-  push:
-    branches:
-      - main
+on: pull_request
 env:
   ORGANIZATION_SLUG: templates
   INSTRUQT_TOKEN: ${{ secrets.INSTRUQT_TOKEN }}
 jobs:
   deploy-changes:
     name: Deploy changes
-    runs-on: ubuntu-latest
+    container:
+      image: instruqt/cli
+      env:
+        INSTRUQT_TOKEN: ${{ env.INSTRUQT_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -19,6 +19,7 @@ jobs:
 
           for track in */; do
               pushd $track
-              docker run -e INSTRUQT_TOKEN=${{ env.INSTRUQT_TOKEN }} --workdir="/track" --mount type=bind,source="$(pwd)",target=/track instruqt/cli track push --force
+              echo $track
+              instruqt --help
               popd
-          done
+          done\
