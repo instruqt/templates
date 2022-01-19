@@ -1,5 +1,4 @@
 slug: kubernetes-cluster
-id: 2lb3tdzl8dan
 type: track
 title: Multi-node Kubernetes cluster
 teaser: Setup a Kubernetes cluster on multiple sandbox hosts
