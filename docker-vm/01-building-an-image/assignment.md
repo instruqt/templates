@@ -1,6 +1,5 @@
 ---
 slug: building-an-image
-id: 5pfctcg5dylf
 type: challenge
 title: Building a container image
 teaser: Learn how to build an image using a Dockerfile

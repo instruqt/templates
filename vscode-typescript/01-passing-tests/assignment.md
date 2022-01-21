@@ -1,6 +1,5 @@
 ---
 slug: passing-tests
-id: kgsrl1diqfpz
 type: challenge
 title: Passing tests
 teaser: Learn how to run and pass tests

@@ -1,6 +1,5 @@
 ---
 slug: kubernetes-dashboard
-id: lz3wgs4qaigx
 type: challenge
 title: Kubernetes Dashboard
 teaser: Expose the kubernetes dashboard in a tab
