@@ -1,4 +1,5 @@
 slug: vscode-typescript
+id: 0dxngfkws4op
 type: track
 title: VSCode & TypeScript
 teaser: Edit and test TypeScript applications in VSCode
@@ -21,3 +22,4 @@ developers:
 - vadym@instruqt.com
 private: false
 published: true
+checksum: "4690624364675616768"

@@ -1,4 +1,5 @@
 slug: docker-vm
+id: uzxqici3wh6h
 type: track
 title: Sandbox virtual machine
 teaser: Use a virtual machine (VM) as a sandbox host
@@ -20,3 +21,4 @@ developers:
 - vadym@instruqt.com
 private: false
 published: true
+checksum: "12703814078892311708"
