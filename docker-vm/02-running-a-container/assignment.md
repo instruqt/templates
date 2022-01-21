@@ -1,5 +1,6 @@
 ---
 slug: running-a-container
+id: fty3fwbuybcd
 type: challenge
 title: Starting a container
 teaser: Start the container image you've just built
