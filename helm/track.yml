@@ -1,5 +1,4 @@
 slug: helm
-id: 5qfxre4keecb
 type: track
 title: Helm chart
 teaser: Learn how to install helm charts with Instruqt.
@@ -19,4 +18,3 @@ developers:
   - gerson@instruqt.com
 private: false
 published: true
-checksum: "9979754119823216916"
