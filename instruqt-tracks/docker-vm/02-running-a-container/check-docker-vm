@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euxo pipefail
+
 echo "Running challenge check script on host docker-vm"
 
 if ! docker container ls | grep -q "my-service"; then

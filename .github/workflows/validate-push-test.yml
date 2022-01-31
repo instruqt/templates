@@ -33,6 +33,7 @@ jobs:
         - kubernetes
         - kubernetes-cluster
         - vscode-typescript
+        - helm
     steps:
       - run: echo "📝 Instruqt validate/push/test job was triggered by a ${{ github.event_name }} event."
       - name: Check out repository code

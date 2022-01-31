@@ -1,43 +1,16 @@
 slug: container
-id: wvwnokdc0kxo
 type: track
 title: Sandbox container
 teaser: Get started quickly with just one container-based sandbox host.
-description: |-
-  Get started quickly with just one container-based sandbox host.
-
-  **This track demonstrates how to:**
-    - Use an ubuntu container as a sandbox host
-    - Add a simple check script
-    - Use a terminal tab to let the user access the host
+description: Get started quickly with a container-based sandbox host. Choose a container
+  when you need a fast, lightweight Linux system.
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: templates
 developers:
 - victor@instruqt.com
-- matthiskheimensen@gmail.com
 - wietse@instruqt.com
+- vadym@instruqt.com
+- matthisk@instruqt.com
 private: false
 published: true
-challenges:
-- slug: 01-creating-a-directory
-  id: 0tncbxalxf6y
-  type: challenge
-  title: Creating a directory
-  teaser: Learn how to create directory
-  assignment: |-
-    Create a directory with the name `instruqt` to complete this challenge.
-
-    Use the `mkdir` command to create the directory:
-    ```
-    mkdir instruqt
-    ```
-
-    To complete this track click the **Check** button.
-  tabs:
-  - title: Shell
-    type: terminal
-    hostname: container
-  difficulty: basic
-  timelimit: 600
-checksum: "4011864822941036508"
