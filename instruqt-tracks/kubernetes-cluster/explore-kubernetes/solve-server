@@ -1,6 +1,0 @@
-#!/bin/bash -l
-
-cat <<EOF >> /root/.bash_history
-kubectl get nodes
-./token.sh
-EOF

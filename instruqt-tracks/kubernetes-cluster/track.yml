@@ -1,4 +1,5 @@
 slug: kubernetes-cluster
+id: 2lb3tdzl8dan
 type: track
 title: Multi-node Kubernetes cluster
 teaser: Setup a Kubernetes cluster on multiple sandbox hosts
@@ -19,6 +20,8 @@ developers:
 - ade@instruqt.com
 - wietse@instruqt.com
 - vadym@instruqt.com
+- sean@instruqt.com
 private: false
 published: true
 show_timer: true
+checksum: "2343778297332020282"
