@@ -1,7 +1,7 @@
 slug: vscode-typescript
 type: track
 title: VSCode & TypeScript
-teaser: Edit and test TypeScript applications in VSCode
+teaser: Edit and test TypeScript applications in Visual Studio Code (Code Editor)
 description: |-
   A basic track for editing a TypeScript application and running tests for it.
   The track checks are failing based on the test results.

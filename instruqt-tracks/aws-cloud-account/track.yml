@@ -10,6 +10,8 @@ description: |-
     - How to use the cloud client Docker container
     - Use the AWS CLI and UI from our learn environment
     - Limit usage of the cloud account using IAM and SCP policies
+
+  The default settings of this track only allow t2.nano sized ec2 instances. You should adjust the IAM policy to fit your own use case and application size.
 icon: https://cdn.instruqt.com/assets/templates/aws.png
 tags:
 - Cloud Account
