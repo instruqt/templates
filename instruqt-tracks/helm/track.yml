@@ -10,7 +10,7 @@ description: |-
     - A virtual machine with a kubernetes cluster
     - Helm already installed on the machine
     - NGINX ingress controller pre-installed on the kubernetes cluster
-icon: ./assets/helm.png
+icon: https://raw.githubusercontent.com/instruqt/instruqt-track-assets/master/track-icons/helm.png
 tags: []
 owner: templates
 developers:
