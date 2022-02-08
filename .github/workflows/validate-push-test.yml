@@ -8,7 +8,9 @@
 #
 ##############################################################################
 name: Instruqt Validate, Push, and Test
-concurrency: 1
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 on:
   push:
     branches:
