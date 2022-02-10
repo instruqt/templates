@@ -12,7 +12,7 @@ aws_accounts:
       "Version": "2012-10-17",
       "Statement": [
         {
-            "Sid":"IGWCreationPolicy",
+            "Sid":"EC2DefaultAllow",
             "Effect": "Allow",
             "Action": "ec2:*",
             "Resource": "*"

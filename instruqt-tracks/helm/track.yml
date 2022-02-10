@@ -1,7 +1,7 @@
 slug: helm
 type: track
 title: Helm chart
-teaser: Learn how to install helm charts with Instruqt.
+teaser: Learn how to install helm charts with Instruqt
 description: |-
   Learn how to build tracks with a pre-installed helm chart in this template.
 
@@ -10,7 +10,7 @@ description: |-
     - A virtual machine with a kubernetes cluster
     - Helm already installed on the machine
     - NGINX ingress controller pre-installed on the kubernetes cluster
-icon: ./assets/helm.png
+icon: https://raw.githubusercontent.com/instruqt/instruqt-track-assets/master/track-icons/helm.png
 tags: []
 owner: templates
 developers:
