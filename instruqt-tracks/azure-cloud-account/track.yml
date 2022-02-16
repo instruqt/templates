@@ -1,0 +1,16 @@
+slug: azure-cloud-account
+id: sxyq1fdxnqwz
+type: track
+title: Azure Cloud Account
+teaser: This track includes an Azure Subscription with Contributor role associated.
+description: |-
+  This track shows you how to configure Instruqt with an Azure account with Contributor level privileges granted, so make sure you keep it private.
+  You can customize the permissions with the `roles` setting in `config.yaml` file.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: instruqt
+developers:
+- soufiane@instruqt.com
+private: false
+published: false
+checksum: "18087205552490805884"
