@@ -32,13 +32,13 @@ Explore the console using the given login credentials or with `gcloud` CLI avail
 
 Remember that you are only allowed to interact with Compute service, for example:
 
-## Listing compute instances
+## Creating a compute instances
 
+```
+gcloud compute instances create myinstance --zone=europe-west1-b
+```
+
+## Listing compute instances
 ```
 gcloud compute instances list
-```
-
-## Listing compute images
-```
-gcloud compute images list
 ```

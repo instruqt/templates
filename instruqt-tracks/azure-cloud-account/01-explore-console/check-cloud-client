@@ -1,0 +1,5 @@
+#!/bin/bash
+resourceCount=$(az group list -o json --query [].id | jq -r length)
+if [[ $resourceCount -lt 1 ]]; then
+  fail-message 'Please create a resource group to proceed'
+fi
