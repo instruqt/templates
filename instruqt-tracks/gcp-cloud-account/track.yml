@@ -1,0 +1,17 @@
+slug: gcp-cloud-account
+type: track
+title: GCP Account
+teaser: This track includes a Google Cloud Project with access to Compute service.
+description: |-
+  This track shows you how to configure Instruqt with a GCP account, it grants administrator level privileges to Compute service so make sure you keep it private.
+  You can customize the permissions with the `services` setting in `config.yaml` file.
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags:
+- cloud
+- gcp
+owner: templates
+developers:
+- soufiane@instruqt.com
+private: false
+published: false
+checksum: "1965189497226730021"

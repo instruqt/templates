@@ -1,0 +1,10 @@
+version: "3"
+containers:
+- name: cloud-client
+  image: gcr.io/instruqt/cloud-client
+  ports: [80]
+  shell: /bin/bash
+azure_subscriptions:
+- name: azuresubscription
+  roles:
+  - Contributor

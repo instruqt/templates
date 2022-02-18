@@ -1,0 +1,5 @@
+#!/bin/bash
+computeInstancesCount=$(gcloud compute instances list --format=json | jq -r '.[].name' | wc -l)
+if [[ $computeInstancesCount -lt 1 ]]; then
+  fail-message 'Please create a compute instance to proceed'
+fi
