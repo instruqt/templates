@@ -1,13 +1,12 @@
 ---
 slug: explore-console
-id: 4urtpmgcxmrm
 type: challenge
 title: explore-console
 teaser: Explore the console
 notes:
 - type: text
   contents: |-
-    A Google Cloud Project has been created for you.
+    A Google Cloud Project is being created for you.
 
     Use the GCP console or the `gcloud` CLI to interact with it.
 

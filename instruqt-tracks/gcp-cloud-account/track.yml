@@ -1,5 +1,4 @@
 slug: gcp-cloud-account
-id: v19yd3lu47nv
 type: track
 title: GCP Account
 teaser: This track includes a Google Cloud Project with access to Compute service.
@@ -10,7 +9,7 @@ icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
 tags:
 - cloud
 - gcp
-owner: instruqt
+owner: templates
 developers:
 - soufiane@instruqt.com
 private: false

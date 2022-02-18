@@ -1,13 +1,12 @@
 ---
 slug: explore-console
-id: tlfoadlgoey6
 type: challenge
 title: explore-console
 teaser: Explore the console
 notes:
 - type: text
   contents: |-
-    An Azure Subscription has been created for you.
+    An Azure Subscription is being created for you.
 
     Use the Azure Portal or the `az` CLI to interact with it.
 
