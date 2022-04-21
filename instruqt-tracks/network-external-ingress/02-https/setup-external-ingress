@@ -1,0 +1,18 @@
+#!/bin/bash
+set -euxo pipefail
+
+echo "Running https challenge setup script"
+
+# We need to install certbot to allow us to
+# generate and serve certificates.
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
+
+# Run certbot to get certificate for domain
+# along with editing the nginx configuration
+# to serve the certificate.
+certbot --nginx \
+  -d external-ingress.${_SANDBOX_ID}.instruqt.io \
+  -m chad@instruqt.com \
+  --agree-tos \
+  -n

@@ -1,0 +1,9 @@
+version: "3"
+virtualmachines:
+- name: external-ingress
+  image: ubuntu-minimal-2004-lts
+  shell: /bin/bash
+  machine_type: n1-standard-1
+  allow_external_ingress:
+  - http
+  - https
