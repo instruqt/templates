@@ -17,6 +17,6 @@ tags:
 owner: templates
 developers:
 - chad@instruqt.com
-private: true
-published: false
+private: false
+published: true
 checksum: "10042787652761433073"
