@@ -1,5 +1,4 @@
 slug: network-external-ingress
-id: wpxes9wdpepb
 type: track
 title: Virtual Machine with allow external ingress
 teaser: Allow external systems to communicate with a VM.
@@ -15,7 +14,7 @@ icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/instruqt.png
 tags:
 - introduction
 - instruqt
-owner: instruqt
+owner: templates
 developers:
 - chad@instruqt.com
 private: true
