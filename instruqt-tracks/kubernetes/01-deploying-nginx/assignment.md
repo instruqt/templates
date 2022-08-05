@@ -1,5 +1,6 @@
 ---
 slug: deploying-nginx
+id: iy5sfwnj3cx2
 type: challenge
 title: Deploy NGINX
 teaser: Everything starts with a web server

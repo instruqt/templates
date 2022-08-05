@@ -1,11 +1,11 @@
-name: 'Instruqt Track Test'
-description: 'Tests an Instruqt track. Must be in the track directory to run.'
+name: Instruqt Track Test
+description: Tests an Instruqt track. Must be in the track directory to run.
 inputs:
   path:
     description: Path to the Instruqt track.
     required: true
 runs:
-  using: 'composite'
+  using: composite
   steps:
   - name: Run track test
     shell: bash
