@@ -1,16 +1,16 @@
 version: "3"
 virtualmachines:
-- name: server
-  image: instruqt/k3s-v1-21-4
-  shell: /bin/bash
-  environment:
-    K3S_TOKEN: superSecur3T0ken
-  machine_type: n1-standard-1
 - name: worker1
   image: instruqt/k3s-v1-21-4
   shell: /bin/bash
   environment:
     K3S_CONTROL_PLANE_HOSTNAME: server
+    K3S_TOKEN: superSecur3T0ken
+  machine_type: n1-standard-1
+- name: server
+  image: instruqt/k3s-v1-21-4
+  shell: /bin/bash
+  environment:
     K3S_TOKEN: superSecur3T0ken
   machine_type: n1-standard-1
 - name: worker2

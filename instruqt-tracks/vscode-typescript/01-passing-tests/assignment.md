@@ -1,5 +1,6 @@
 ---
 slug: passing-tests
+id: 31ccoitu3jhm
 type: challenge
 title: Passing tests
 teaser: Learn how to run and pass tests
