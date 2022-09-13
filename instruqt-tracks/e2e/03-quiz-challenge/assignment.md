@@ -1,18 +1,19 @@
 ---
 slug: quiz-challenge
+id: dcga4jjnbpl9
 type: quiz
 title: Quiz challenge
 teaser: A short description of the challenge.
 notes:
-  - type: text
-    contents: Replace this text with your own text
+- type: text
+  contents: Replace this text with your own text
+answers:
+- Correct answer
+- Incorrect answer
+solution:
+- 0
 difficulty: basic
 timelimit: 600
-answers:
-  - Correct answer
-  - Incorrect answer
-solution:
-  - 1
 ---
 
 This is a quiz
