@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euxo pipefail
+
+echo "Checking if the folder instruqt exists."
+
+if [ -d /root/instruqt ]
+then
+    echo "The folder instruqt exists"
+else
+    fail-message "There is no folder named instruqt, did you create it?"
+fi

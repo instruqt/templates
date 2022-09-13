@@ -1,0 +1,16 @@
+slug: e2e
+id: 0xifsmqxokgq
+type: track
+title: e2e
+teaser: This track contains the most critical scenarios in a track. Used for e2e tests.
+description: This track contains the most critical scenarios in a track. Used for
+  e2e tests.
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: instruqt-e2e
+developers:
+- victor@instruqt.com
+private: true
+published: false
+skipping_enabled: true
+checksum: "11989738945404450213"
