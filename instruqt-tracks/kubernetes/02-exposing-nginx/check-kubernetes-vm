@@ -1,4 +1,0 @@
-#!/bin/bash
-
-kubectl get service nginx || fail-message "Did you apply the service.yaml?"  
-

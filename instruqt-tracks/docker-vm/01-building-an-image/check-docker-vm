@@ -1,7 +1,0 @@
-#!/bin/bash
-set -euxo pipefail
-
-if ! docker image ls | grep "my-service"; then
-    fail-message "Couldn't find an image with the name my-service"
-    exit 1
-fi

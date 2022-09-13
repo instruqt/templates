@@ -1,6 +1,0 @@
-#!/bin/bash
-set -euxo pipefail
-
-grep "kubectl get nodes" /root/.bash_history || fail-message "Don't forget to list all the nodes with \`kubectl get nodes\`"
-
-grep "kubectl get pods" /root/.bash_history || fail-message "Don't forget to list system pods with \`kubectl get pods --namespace kube-system\`"

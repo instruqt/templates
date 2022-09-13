@@ -1,5 +1,0 @@
-#!/bin/bash
-set -euxo pipefail
-
-# Use this script to configure your own setup steps for this particular challenge.
-# You may also use the track_scripts directory for setup that occurs before the student logs on

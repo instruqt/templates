@@ -1,6 +1,0 @@
-#!/bin/bash
-set -euxo pipefail
-
-echo "Running challenge solve script on host docker-vm"
-
-docker build -t my-service /app

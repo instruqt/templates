@@ -1,5 +1,0 @@
-#!/bin/bash
-
-kubectl get deployment nginx || fail-message "I expected an nginx deployment"  
-
-

@@ -1,8 +1,8 @@
 ---
-slug: creating-a-directory
-id: 6ohayibpqyod
+slug: challenge1
+id: sdaitqjye2z8
 type: challenge
-title: Creating a directory
+title: challenge1
 teaser: Learn how to create directory
 notes:
 - type: text
@@ -12,7 +12,7 @@ tabs:
   type: terminal
   hostname: container
 difficulty: basic
-timelimit: 600
+timelimit: 100
 ---
 
 🤖 Let's start

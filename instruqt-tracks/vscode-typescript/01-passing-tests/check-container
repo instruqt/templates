@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "Running challenge check script on host container"
-
-# Change directory to the cloned repository and run the tests
-cd /app
-
-# Run the tests
-npm test || fail-message "Some of tests are failing. Run them from VSCode to see what needs fixing."

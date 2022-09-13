@@ -1,4 +1,3 @@
-# Instruqt templates & examples
-[![Instruqt Validate, Push, and Test](https://github.com/instruqt/templates/actions/workflows/prod-track-test.yml/badge.svg)](https://github.com/instruqt/templates/actions/workflows/prod-track-test.yml)
+# Instruqt E2E tracks
 
-We've created a library of tracks you can learn from. Hit the ground running with our fully-functioning example tracks featuring Docker, Kubernetes, or standard Ubuntu.
+This repository is used to manage the source control for our e2e tests.

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cat <<EOF >> /root/.bash_history
-kubectl get nodes
-kubectl get pods --namespace -kube-system
-EOF
