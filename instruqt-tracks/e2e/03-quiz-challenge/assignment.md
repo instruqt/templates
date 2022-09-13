@@ -1,16 +1,18 @@
 ---
 slug: quiz-challenge
-type: challenge
+type: quiz
 title: Quiz challenge
 teaser: A short description of the challenge.
 notes:
-- type: text
-  contents: Replace this text with your own text
-tabs:
-- title: Service
-  type: service
-  hostname: nginx
-  port: 80
+  - type: text
+    contents: Replace this text with your own text
 difficulty: basic
 timelimit: 600
+answers:
+  - Correct answer
+  - Incorrect answer
+solution:
+  - 1
 ---
+
+This is a quiz
