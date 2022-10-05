@@ -1,15 +1,16 @@
 ---
 slug: check-nginx
+id: olmxhtsa2shq
 type: challenge
 title: Check that the NGINX chart is installed
 teaser: A setup script has used helm to install an NGINX chart. Verify that it worked!
 notes:
-  - type: text
-    contents: Helm is one of the most popular package managers for kubernetes!
+- type: text
+  contents: Helm is one of the most popular package managers for kubernetes!
 tabs:
-  - title: Shell
-    type: terminal
-    hostname: kubernetes-vm
+- title: Shell
+  type: terminal
+  hostname: kubernetes-vm
 difficulty: basic
 timelimit: 600
 ---
