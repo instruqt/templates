@@ -62,4 +62,4 @@ my-ingress-nginx-controller-b9d8cddf4-gwlgr   1/1     Running   0          3m49s
 
 You can click the check button to finish this track!
 
-![helm](./../assets/helm.png)
+![helm](../assets/helm.png)
