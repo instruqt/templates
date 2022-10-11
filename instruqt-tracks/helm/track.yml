@@ -11,11 +11,11 @@ description: |-
     - Helm already installed on the machine
     - NGINX ingress controller pre-installed on the kubernetes cluster
 icon: https://raw.githubusercontent.com/instruqt/instruqt-track-assets/master/track-icons/helm.png
+tags: []
 owner: templates
 developers:
 - victor@instruqt.com
 - gerson@instruqt.com
 private: false
 published: true
-maintenance: false
-checksum: "6394672719031232851"
+checksum: "3290061138735216077"
