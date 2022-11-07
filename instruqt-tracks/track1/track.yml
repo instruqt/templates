@@ -1,6 +1,5 @@
 slug: track1
 id: xxxhvqcbnkcr
-type: track
 title: track1
 teaser: Get started quickly with just one container-based sandbox host.
 description: Get started quickly with a container-based sandbox host. Choose a container
@@ -9,8 +8,9 @@ icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: instruqt-e2e
 developers:
+- victor@instruqt.com
 - mpopov@instruqt.com
 private: true
 published: true
 skipping_enabled: true
-checksum: "6088204193674365732"
+checksum: "5893016397445504355"

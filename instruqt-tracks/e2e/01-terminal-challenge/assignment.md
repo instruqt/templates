@@ -5,14 +5,14 @@ type: challenge
 title: Terminal challenge
 teaser: Runs through a challenge with a terminal
 notes:
-- type: text
-  contents: Note1
+  - type: text
+    contents: Note1
 tabs:
-- title: Shell
-  type: terminal
-  hostname: container
+  - title: Shell
+    type: terminal
+    hostname: container
 difficulty: basic
-timelimit: 100
+timelimit: 180
 ---
 
 # 🤖 Let's start

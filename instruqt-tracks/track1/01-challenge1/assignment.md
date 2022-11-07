@@ -5,18 +5,19 @@ type: challenge
 title: challenge1
 teaser: Learn how to create directory
 notes:
-- type: text
-  contents: Please wait while we set up the first challenge
+  - type: text
+    contents: Slide1
+  - type: text
+    contents: Slide2
 tabs:
-- title: Shell
-  type: terminal
-  hostname: container
+  - title: Shell
+    type: terminal
+    hostname: container
 difficulty: basic
 timelimit: 100
 ---
 
-🤖 Let's start
-==============
+# 🤖 Let's start
 
 Create a directory with the name `instruqt` to complete this challenge.
 
