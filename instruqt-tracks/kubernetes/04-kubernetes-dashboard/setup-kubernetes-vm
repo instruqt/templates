@@ -1,5 +1,41 @@
 #!/bin/bash
-TOKEN=$(kubectl -n kubernetes-dashboard describe secret admin-user-token | grep ^token | awk '{ print $2 }')
+
+# Deploy the dashboard
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+
+# Wait for the Kubernetes dashboard to become available
+while ! curl --silent --fail --output /dev/null http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+do
+    sleep 1 
+done
+
+# Create a service account
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+
+# Assign permissions
+cat <<EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+
+# Generate token
+TOKEN=$(kubectl -n kubernetes-dashboard create token admin-user)
 cat <<EOF > token.sh
 echo ""
 echo $TOKEN
