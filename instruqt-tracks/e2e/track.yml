@@ -1,6 +1,5 @@
 slug: e2e
 id: 0xifsmqxokgq
-type: track
 title: e2e
 teaser: This track contains the most critical scenarios in a track. Used for e2e tests.
 description: This track contains the most critical scenarios in a track. Used for
@@ -10,7 +9,10 @@ tags: []
 owner: instruqt-e2e
 developers:
 - victor@instruqt.com
-private: true
-published: false
+- edward@instruqt.com
 skipping_enabled: true
-checksum: "3906060935077946094"
+lab_config:
+  overlay: false
+  width: 25
+  position: right
+checksum: "13544068396221842029"

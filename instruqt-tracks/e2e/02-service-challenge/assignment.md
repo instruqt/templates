@@ -5,13 +5,13 @@ type: challenge
 title: Serivce challenge
 teaser: This challenge contains a locally running service
 notes:
-  - type: text
-    contents: Replace this text with your own text
+- type: text
+  contents: Replace this text with your own text
 tabs:
-  - title: Service
-    type: service
-    hostname: nginx
-    port: 80
+- title: Service
+  type: service
+  hostname: nginx
+  port: 80
 difficulty: basic
 timelimit: 180
 ---

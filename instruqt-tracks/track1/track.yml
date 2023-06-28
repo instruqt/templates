@@ -9,8 +9,11 @@ tags: []
 owner: instruqt-e2e
 developers:
 - victor@instruqt.com
+- edward@instruqt.com
 - mpopov@instruqt.com
-private: true
-published: true
 skipping_enabled: true
-checksum: "5893016397445504355"
+lab_config:
+  overlay: false
+  width: 25
+  position: right
+checksum: "1211931046216334768"
