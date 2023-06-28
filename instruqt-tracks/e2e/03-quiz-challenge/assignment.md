@@ -5,13 +5,13 @@ type: quiz
 title: Quiz challenge
 teaser: A short description of the challenge.
 notes:
-  - type: text
-    contents: Replace this text with your own text
+- type: text
+  contents: Replace this text with your own text
 answers:
-  - Correct answer
-  - Incorrect answer
+- Correct answer
+- Incorrect answer
 solution:
-  - 0
+- 0
 difficulty: basic
 timelimit: 180
 ---
