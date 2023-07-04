@@ -2,7 +2,7 @@
 slug: service-challenge
 id: qw6rpsjp4zf4
 type: challenge
-title: Serivce challenge
+title: Service challenge
 teaser: This challenge contains a locally running service
 notes:
 - type: text
