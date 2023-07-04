@@ -1,0 +1,18 @@
+slug: e2e
+id: 0xifsmqxokgq
+title: e2e-track-dashboard
+teaser: Used for e2e tests of track dashboard
+description: Used for e2e tests of track dashboard
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: instruqt-e2e
+developers:
+- victor@instruqt.com
+- edward@instruqt.com
+- mpopov@instruqt.com
+skipping_enabled: true
+lab_config:
+  overlay: false
+  width: 25
+  position: right
+checksum: "2483299657396586707"

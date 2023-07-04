@@ -1,0 +1,9 @@
+version: "3"
+containers:
+  - name: container
+    image: ubuntu
+    shell: /bin/bash -l
+    memory: 256
+  - name: nginx
+    image: nginx
+    memory: 256
