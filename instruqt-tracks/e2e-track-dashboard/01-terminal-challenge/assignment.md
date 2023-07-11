@@ -1,6 +1,6 @@
 ---
 slug: terminal-challenge
-id: 0xjmwr87mec1
+id: fvhoap3gy7yo
 type: challenge
 title: Terminal challenge
 teaser: Runs through a challenge with a terminal

@@ -1,0 +1,18 @@
+slug: e2e-virtual-browser
+id: v4awh3fxlvul
+version: 0.0.1
+title: e2e-virtual-browser
+description: ""
+icon: ""
+tags: []
+owner: instruqt-e2e
+developers:
+- piotr@instruqt.com
+timelimit: 60
+sandbox_preset: ""
+lab_config:
+  overlay: false
+  width: 33
+  position: right
+  extend_ttl: 300
+checksum: "10944721886641875858"
