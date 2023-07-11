@@ -156,3 +156,6 @@ content
 content
 
 Content outside scrollview
+
+The following line contains the value of INSTRUQT_TEST_VAR:
+my-runtime-var=[[ Instruqt-Var key="INSTRUQT_TEST_VAR" hostname="container" ]]

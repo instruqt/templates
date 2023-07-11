@@ -10,9 +10,10 @@ owner: instruqt-e2e
 developers:
 - edward@instruqt.com
 - victor@instruqt.com
+- arslan@instruqt.com
 skipping_enabled: true
 lab_config:
   overlay: false
   width: 25
   position: right
-checksum: "7068227168894161348"
+checksum: "7416088910838303426"
