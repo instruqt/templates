@@ -1,0 +1,4 @@
+version: "3"
+virtualbrowsers:
+- name: google
+  url: https://google.com

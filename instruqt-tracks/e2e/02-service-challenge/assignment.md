@@ -1,8 +1,8 @@
 ---
 slug: service-challenge
-id: vdsl1otao8yh
+id: og9oaq8ubfqe
 type: challenge
-title: Serivce challenge
+title: Service challenge
 teaser: This challenge contains a locally running service
 notes:
 - type: text

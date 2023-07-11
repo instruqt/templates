@@ -8,11 +8,11 @@ icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
 tags: []
 owner: instruqt-e2e
 developers:
-- victor@instruqt.com
 - edward@instruqt.com
+- victor@instruqt.com
 skipping_enabled: true
 lab_config:
   overlay: false
   width: 25
   position: right
-checksum: "13544068396221842029"
+checksum: "7068227168894161348"
