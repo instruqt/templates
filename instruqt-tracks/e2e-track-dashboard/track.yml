@@ -1,6 +1,6 @@
 slug: e2e-track-dashboard
 id: vo5t5xm2mo9v
-title: e2e
+title: e2e-track-dashboard
 teaser: Used for e2e tests of track dashboard
 description: Used for e2e tests of track dashboard
 icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
@@ -15,4 +15,4 @@ lab_config:
   overlay: false
   width: 25
   position: right
-checksum: "4233732709932473973"
+checksum: "8436347346729779723"
