@@ -1,0 +1,2 @@
+#!/bin/bash
+agent variable set INSTRUQT_TEST_VAR e2e-variables-working
