@@ -1,0 +1,16 @@
+slug: e2e-instructor-role
+id: 3zauf34pxy0k
+title: e2e-instructor-role
+description: ""
+icon: ""
+tags: []
+owner: instruqt-e2e
+developers:
+- bruno@instruqt.com
+timelimit: 1200
+lab_config:
+  overlay: false
+  width: 33
+  position: right
+  enableLoadingMessages: true
+checksum: "14454318181286207269"
