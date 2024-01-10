@@ -1,6 +1,6 @@
 version: "3"
 virtualmachines:
 - name: kubernetes-vm
-  image: instruqt/k3s-v1-27-1
+  image: instruqt/k3s-v1-29-0
   shell: /bin/bash
   machine_type: n1-standard-2
