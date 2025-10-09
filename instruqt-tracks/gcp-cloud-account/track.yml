@@ -1,5 +1,4 @@
 slug: gcp-cloud-account
-type: track
 title: GCP Account
 teaser: This track includes a Google Cloud Project with access to Compute service.
 description: |-
@@ -7,11 +6,10 @@ description: |-
   You can customize the permissions with the `services` setting in `config.yaml` file.
 icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
 tags:
-- cloud
 - gcp
+- cloud
 owner: templates
-developers:
-- soufiane@instruqt.com
-private: false
-published: false
-checksum: "1965189497226730021"
+developers: []
+idle_timeout: 300
+timelimit: 1200
+enhanced_loading: false

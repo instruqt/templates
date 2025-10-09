@@ -1,7 +1,7 @@
 ---
 slug: explore-console
 type: challenge
-title: explore-console
+title: Explore the console
 teaser: Explore the console
 notes:
 - type: text
@@ -20,7 +20,6 @@ tabs:
 - title: CLI
   type: terminal
   hostname: cloud-client
-difficulty: basic
 timelimit: 600
 ---
 
